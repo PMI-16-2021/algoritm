@@ -38,5 +38,5 @@ void BadPointer::report(std::ostream& out) const
 
 void BadSize::report(std::ostream& out) const
 {
-	out << "Bad array size: " << bad_index << ' ';
+	out << "Bad array size: " << bad_index << '\n';
 }
