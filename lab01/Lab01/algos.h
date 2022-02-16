@@ -18,5 +18,6 @@ private:
 	int bad_index;
 public:
 	BadSize(int parameter) : bad_index(parameter) {}
+	int returnField() const;
 	void report(std::ostream& out) const;
 };
