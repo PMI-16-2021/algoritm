@@ -31,17 +31,7 @@ namespace SortingTest
 
 		TEST_METHOD(BadSize_Test)
 		{
-			int size = -3;
-			int* arr = new int[size];
-			try
-			{
-				insertSort(arr, size);
-			}
-			catch (const BadSize& A)
-			{
-				Assert::AreEqual(-3, A.returnField());
-				
-			}
+
 			
 			
 			
