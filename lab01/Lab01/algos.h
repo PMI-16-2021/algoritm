@@ -14,10 +14,26 @@ public:
 
 class BadSize
 {
-private:
+protected:
 	int bad_index;
 public:
 	BadSize(int parameter) : bad_index(parameter) {}
 	int returnField() const;
-	void report(std::ostream& out) const;
+	virtual void report(std::ostream& out) const;
 };
+
+
+class BadIndex : public BadSize
+{
+public:
+	BadIndex(int bad_index) : BadSize(bad_index) {}
+	void report(std::ostream& out) const override;
+
+
+
+};
+
+void Swap(int& first, int& second);
+void QuickSort(int* arr, int min_index, int max_index);
+
+int GetPivotIndex(int* arr, int start, int begin);
