@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 
-void insertSort(int* array, int size);
+void InsertSort(int* array, int size);
 void printArray(int* array, int size, std::ostream& out);
 
 class BadPointer
@@ -37,3 +37,10 @@ void Swap(int& first, int& second);
 void QuickSort(int* arr, int min_index, int max_index);
 
 int GetPivotIndex(int* arr, int start, int begin);
+
+void ShellSorting(int* arr, int size);
+
+int GetMin(int* arr, int size);
+int GetMax(int* arr, int size);
+
+void CountSorting(int* arr, int size);
