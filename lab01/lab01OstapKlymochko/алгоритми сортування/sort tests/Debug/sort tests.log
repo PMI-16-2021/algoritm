@@ -1,0 +1,2 @@
+﻿  sort tests.cpp
+LINK : fatal error LNK1104: cannot open file 'D:\проги\алгоритми сортування\алгоритми сортування\Debug\funcs.h'
