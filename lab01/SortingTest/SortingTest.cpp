@@ -28,12 +28,23 @@ namespace SortingTest
 		{
 			const int size = 10;
 			int arr_forward[size] = { 48, 73, 10, -5, 14, 106, 43, 40, 0, 60 };
-			int arr_reverse[size] = {106, 73, 60, 48, 43, 40, 14, 10, 0, -5 };
+			int arr_reverse[size] = {106, 73, 60, 48, 43, 40, 14, 10, 0, -5 }; 
 			InsertSort(arr_forward, size);
 			InsertSort(arr_reverse, size);
 			for (int i = 0; i < size; ++i) Assert::AreEqual(arr_forward[i], arr_reverse[i]);
 		}
 
+		TEST_METHOD(Sorted_array_insertSort)
+		{
+			const int size = 10;
+			int sorted_array[size] = { -5, 0, 10, 14, 40, 43, 48, 60, 73, 106 };
+			InsertSort(sorted_array, size);
+
+
+			Assert::AreEqual(-5, sorted_array[0]);
+			Assert::AreEqual(0, sorted_array[1]);
+			Assert::AreEqual(106, sorted_array[9]);
+		}
 
 		TEST_METHOD(Exceptions_Classes_Check_insertSort)
 		{
@@ -88,6 +99,17 @@ namespace SortingTest
 			
 		}
 		
+		TEST_METHOD(Sorted_array_QuickSort)
+		{
+			const int size = 10;
+			int sorted_array[size] = { -5, 0, 10, 14, 40, 43, 48, 60, 73, 106 };
+			QuickSort(sorted_array, 0, size);
+
+
+			Assert::AreEqual(-5, sorted_array[0]);
+			Assert::AreEqual(0, sorted_array[1]);
+			Assert::AreEqual(106, sorted_array[9]);
+		}
 		TEST_METHOD(Exceptions_Classes_Check_Quicksort)
 		{
 			const int size = 10;
@@ -137,6 +159,18 @@ namespace SortingTest
 			ShellSorting(arr_reverse, size);
 			for (int i = 0; i < size; ++i) Assert::AreEqual(arr_forward[i], arr_reverse[i]);
 
+		}
+
+		TEST_METHOD(Sorted_array_ShellSorting)
+		{
+			const int size = 10;
+			int sorted_array[size] = { -5, 0, 10, 14, 40, 43, 48, 60, 73, 106 };
+			ShellSorting(sorted_array, size);
+
+
+			Assert::AreEqual(-5, sorted_array[0]);
+			Assert::AreEqual(0, sorted_array[1]);
+			Assert::AreEqual(106, sorted_array[9]);
 		}
 
 		TEST_METHOD(ExceptionClasses_Check_ShellSorting)
@@ -189,6 +223,17 @@ namespace SortingTest
 			for (int i = 0; i < size; ++i) Assert::AreEqual(arr_forward[i], arr_reverse[i]);
 		}
 
+		TEST_METHOD(Sorted_array_CountSorting)
+		{
+			const int size = 10;
+			int sorted_array[size] = { -5, 0, 10, 14, 40, 43, 48, 60, 73, 106 };
+			CountSorting(sorted_array, size);
+
+
+			Assert::AreEqual(-5, sorted_array[0]);
+			Assert::AreEqual(0, sorted_array[1]);
+			Assert::AreEqual(106, sorted_array[9]);
+		}
 		TEST_METHOD(Exceptions_Classes_Check_CountSorting)
 		{
 			const int size = 10;
