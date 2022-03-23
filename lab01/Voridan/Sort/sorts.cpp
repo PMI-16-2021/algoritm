@@ -174,7 +174,6 @@ void Merge(int* arr, int start, int middle, int end){
         ++j;
         ++k;
     }
-
 }
 void MergeSort(int* arr, int start, int end){
     if(start > end)
