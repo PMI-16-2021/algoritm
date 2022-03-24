@@ -1,2 +1,3 @@
-﻿  main.cpp
+﻿  sort.cpp
+C:\Users\bozen\Documents\Git\algoritm\lab01\Sort\Sort\sort.cpp(64,19): warning C4101: 'count': unreferenced local variable
   Sort.vcxproj -> C:\Users\bozen\Documents\Git\algoritm\lab01\Sort\x64\Debug\Sort.exe

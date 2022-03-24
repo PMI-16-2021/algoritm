@@ -14,6 +14,7 @@ void Swap(int* fir, int* sec) {
 	*fir = *sec;
 	*sec = temp;
 }
+
 void ReverseSortArray(int* arr, int n) {
 	int j = n - 1;
 	for (int i = 0; i < n/2; ++i) {
@@ -67,26 +68,23 @@ void ShellSort(int* arr, int n) {
 		for (i = 0; i < n - Group; ++i) {
 			j = i;
 			while (j >= 0 && arr[j] > arr[j + Group]) {
-				count = arr[j];
-				arr[j] = arr[j + Group];
-				arr[j + Group] = count;
+				Swap(&arr[j], &arr[j + Group]);
 				--j;
 			}
 		}
 		Group = Group / 2;
 	}
 }
-
-
 int GetMax(int* arr, int n) {
 	int MaxValue = arr[0];
 	for (int i = 1; i < n; ++i) {
 		if (arr[i] > MaxValue) {
 			MaxValue = arr[i];
 		}
-	}
+	} 
 	return MaxValue;
 }
+
 void CountingSort(int* arr, int size, int place) {
 	int Output[1000];
 	int Count[10] = { 0 };
