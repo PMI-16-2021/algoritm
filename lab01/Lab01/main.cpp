@@ -19,6 +19,7 @@ int main()
 	int arr_two_[array_size] = { 17, -35,-24, 43, 5, -74, -45, -48, -28, 96 };
 	printArray(arr_two_, array_size, std::cout);
 	QuickSort(arr_two_, 0, array_size);
+	system("pause");
 	std::cout << "\nSORTED  ARRAY: "; 
 	printArray(arr_two_, array_size, std::cout); std::cout << '\n';
 /////////
@@ -38,8 +39,7 @@ int main()
 	printArray(arr_one_, array_size, std::cout); std::cout << '\n';
 
 
-
-
+	
 
 
 

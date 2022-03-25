@@ -39,8 +39,8 @@ void Swap(int& first, int& second)
 	second = temp;
 }
 
-void QuickSort(int* arr, int min_index, int max_index)
-{
+void QuickSort(int* arr, int min_index, int max_index) //recursion 
+{                                                      //choose pivot, than sort left - right
 	
 	if (arr == nullptr) throw BadPointer();
 	if (min_index < 0) throw BadIndex(min_index);
@@ -95,7 +95,7 @@ void ShellSorting(int* arr, int size)
 		for (int i = 0; i < size - step; ++i)
 		{
 			int j = i;
-			while (j >= 0 && arr[j] > arr[j + step]) //similar to nsertSort
+			while (j >= 0 && arr[j] > arr[j + step]) //similar to InsertSort
 			{
 				int temp = arr[j];
 				arr[j] = arr[j + step];
@@ -155,8 +155,6 @@ void BadPointer::report(std::ostream& out) const
 {
 	out << "Array pointer is nullptr. Impossible to carry out the function.\n";
 }
-
-
 
 int BadSize::returnField() const
 {
