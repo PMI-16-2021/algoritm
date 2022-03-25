@@ -33,3 +33,31 @@
 
 .idea
 
+*.filters
+*.user
+*.vcxproj
+*.pdb
+*.tlog
+*.opendb
+*.db
+*.suo
+*.db-wal
+*.log
+*.idb
+*.db-shm
+*.ipch
+*.sln
+*.testlog
+*.recipe
+*.gitignore
+*.ilk
+*.manifest
+
+lab01/Lab01/.vs/Sorting/v16/TestStore/0/001.testlog
+lab01/Lab01/algos.h
+lab01/Lab01/main.cpp
+lab01/Lab01/Debug/SortingTest.exp
+lab01/Lab01/Debug/Project1.ilk
+lab01/Lab01/algos.h
+lab01/Lab01/algos.cpp
+lab01/Lab01/.vs/Sorting/v16/TestStore/0/001.testlog
