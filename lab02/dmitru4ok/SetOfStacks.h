@@ -12,9 +12,9 @@ private:
 	int filledLists; // number of full Stacks inside Set
 public:
 	SetOfStacks<T>();
-	virtual ~SetOfStacks<T>();
-	virtual T pop(); //override from class Stack
-	virtual void push(T); //override from class Stack
+	~SetOfStacks<T>();
+	T pop(); //override from class Stack
+	void push(T); //override from class Stack
 };
 
 

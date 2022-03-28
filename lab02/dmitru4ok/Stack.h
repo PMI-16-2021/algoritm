@@ -17,7 +17,7 @@ private:
 	StackNode<T>* Top;
 	void delFirst();
 public:
-	virtual ~Stack(); // uses empty
+	~Stack(); // uses empty
 	Stack<T>();
 	Stack<T>(T item_to_create);
 
