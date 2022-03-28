@@ -1,24 +1,45 @@
 #include <iostream>
-#include "Stack.h";
+#include "SetOfStacks.h"
 
 using std::cout;
 
 
 int main()
 {
-	Stack myStack;
-	for (int i = 0; i < 6; ++i)
-	{
-		myStack.push(i);
-	}
-	cout << "Size: " << myStack.size() << "Top element:" << myStack.top() << '\n';
+	SetOfStacks<int> A;
 
-	while (!myStack.empty())
-	{
-		cout << myStack.pop() << '\n';
-	}
-	cout << "Size: " << myStack.size() << '\n';
+	A.push(5);
+	A.push(4);
+	A.push(3);
+	A.push(2);
+	A.push(1);
+	A.push(0);
+	A.push(-1);
+	A.push(-2);
+	A.push(-3);
+	A.push(-4);
+	A.push(-5);
+
+	cout << A.pop(); 
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
+	cout << A.pop();
 	
+	try
+	{
+		cout << A.pop(); //7-th pop
+	}
+	catch (const char* b)
+	{
+		cout << b;
+	}
 	
 
 
@@ -28,9 +49,7 @@ int main()
 
 
 
-
-
-
+	
 
 
 	system("pause");
