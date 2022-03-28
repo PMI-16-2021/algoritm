@@ -6,7 +6,7 @@ template <typename T>
 class SetOfStacks
 {
 private:
-	Stack<T>& operator[](int index); //private operator
+	
 	enum {MAX = 5};
 	Stack<T> memory[MAX]; // pointer to  Stack array 
 	int filledLists; // number of full Stacks inside Set
@@ -48,6 +48,7 @@ T SetOfStacks<T>::pop()
 template<typename T>
 SetOfStacks<T>::SetOfStacks(): filledLists(0)
 {
+
 }
 
 template <typename T>
@@ -72,10 +73,4 @@ void SetOfStacks<T>::push(T _item_to_push)
 		return;
 	}
 
-}
-
-template<typename T>
-Stack<T>& SetOfStacks<T>::operator[](int index)
-{
-	return memory[index];
 }
