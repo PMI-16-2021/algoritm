@@ -6,32 +6,34 @@ using std::cout;
 
 int main()
 {
-	SetOfStacks<char> A(13, 2);
+	SetOfStacks<char> A(2, 13);
+	if (A.completelyEmpty()) cout << "NO ELEMENTS(constructor).\n"; // must work
 
 
-	//A.push('a'); //zero five [0] Stack
-	//A.push('b');
-	//A.push('c');
-	//A.push('d');
-	//A.push('e');
+	A.push('a'); //zero five [0] Stack
+	A.push('b');
+	A.push('c');
+	A.push('d');
+	A.push('e');
 
-	//A.push('f'); //first five [1] Stack
-	//A.push('g');
-	//A.push('h');
-	//A.push('i');
-	//A.push('e');
+	A.push('f'); //first five [1] Stack
+	A.push('g');
+	A.push('h');
+	if (A.completelyEmpty()) cout << "NO ELEMENTS.(middle)\n"; //must not work
+	A.push('i');
+	A.push('e');
 
-	//A.push('e');
-	//cout << "A.topAt(2): " << A.topAt(2) << '\n';
-	//if (A.topAt(1) == A.topAt(2)) cout << "success.\n";
+	A.push('e');
+	A.push('k');
 
-	//A.push('k');
-	char a = 'a';
+	A.clearSet();
+	if (A.completelyEmpty()) cout << "NO ELEMENTS.\n";
+	char a = 'z';
 	
 	while (!A.completelyFull())
 	{
 		A.push(a);
-		++a;
+		--a;
 	}
 	while (!A.completelyEmpty())
 	{

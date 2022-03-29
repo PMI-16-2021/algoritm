@@ -12,23 +12,22 @@ private:
 public:
 	SetOfStacks<T>();
 	SetOfStacks<T>(int _MAX, int _size_of_Stacks);
-	~SetOfStacks<T>();
+	~SetOfStacks<T>(); 
 	T pop(); //override from class Stack
 	void push(T); //override from class Stack
-	T popAt(int);
+	T popAt(int);        //remove at certain index
 	int getCurrent()const; //return number of full stacks
-	T top()const;
-	T topAt(int index)const;
-	bool completelyEmpty() const;
-	bool completelyFull()const;
+	T top()const;          //acess top element
+	T topAt(int index)const; //acess top element at ceratin Stack
+	bool completelyEmpty() const; //true if 0 elements indsied
+	bool completelyFull()const; //true if all Stacks have no free space
+	void clearSet();            //delete all elements
 };
 
 template<typename T>
 SetOfStacks<T>::~SetOfStacks()
 {
-	
-	delete[] memory;
-	//~Stack => calls method clear for each elem of array
+	delete[] memory; //~Stack => calls method clear for each elem of array
 }
 
 template <typename T>
@@ -52,19 +51,19 @@ T SetOfStacks<T>::pop()
 template<typename T>
 SetOfStacks<T>::SetOfStacks()  //filled = 0 and every stack is empty
 {
-	size_of_each = 5;
-	current = 0;
-	MAX = size_of_each;
-	memory = new Stack<T>[MAX];
+	size_of_each = 5; //default 5 
+	current = 0;      //0 Stacks filled
+	MAX = size_of_each;//5 as well
+	memory = new Stack<T>[MAX]; // init mem
 }
 
 template<typename T>
 SetOfStacks<T>::SetOfStacks(int _MAX, int _size_of_Stacks)
 {
-	MAX = (_MAX > 0) ? _MAX : 5;
-	size_of_each = (_size_of_Stacks > 0) ? _size_of_Stacks : 5;
-	memory = new Stack<T>[MAX];
-	current = 0;
+	MAX = (_MAX > 0) ? _MAX : 5;      //if _MAX > 0 the n param; else - 5;
+	size_of_each = (_size_of_Stacks > 0) ? _size_of_Stacks : 5; //if _param > 0 then param; else - 5;
+	memory = new Stack<T>[MAX]; //init memory
+	current = 0; 
 }
 
 template <typename T>
@@ -144,5 +143,22 @@ bool SetOfStacks<T>::completelyEmpty() const // if curr is empty and nowhere to 
 template<typename T>
 inline bool SetOfStacks<T>::completelyFull() const
 {
-	return (current == MAX - 1 && memory[current].size() >= size_of_each ); //if last is full and nowhere to  
-}                                                                           //move forward => completely full
+	for (int i = 0; i < MAX; ++i)
+	{
+		if (memory[i].size() < size_of_each) // if less than size elems in at least one Stack
+		{
+			return false;               // return false
+		}
+	}
+	return true; //else return true
+}
+
+template<typename T>
+void SetOfStacks<T>::clearSet()
+{
+	for ( int i = 0; i < MAX; ++i)
+	{
+		memory[i].clear();
+	}
+	current = 0;
+}
