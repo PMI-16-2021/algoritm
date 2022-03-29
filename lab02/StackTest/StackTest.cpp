@@ -6,7 +6,7 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace StackTest
 {
-	TEST_CLASS(StackMethodsTest)
+	TEST_CLASS(Stack_Methods_Test)
 	{
 	public:
 		
@@ -24,7 +24,6 @@ namespace StackTest
 		TEST_METHOD(Push_pop_Test)
 		{
 			Stack<int> A;
-			
 			A.push(3);
 			Assert::AreEqual(3, A.top());
 			A.push(4);
@@ -43,8 +42,8 @@ namespace StackTest
 			}
 			catch (const char*)
 			{
-			}
 
+			}
 			B.push('a');
 			B.push('d');//push element
 			Assert::AreEqual('d', B.top());
@@ -67,7 +66,6 @@ namespace StackTest
 			Assert::IsFalse(A.empty());
 			A.clear();
 			Assert::IsTrue(A.empty());	
-
 		}
 
 		TEST_METHOD(empty_Test)
@@ -84,21 +82,17 @@ namespace StackTest
 
 		TEST_METHOD(size_Test)
 		{
-			size_t a = 0;
 			Stack<int> A;
-			Assert::AreEqual(a, A.size());
+			Assert::AreEqual(0, A.size());
 			A.push(5);
 			A.push(4);
-			size_t b = 2;
-			Assert::AreEqual(b, A.size());
+			Assert::AreEqual(2, A.size());
 			A.push(3);
 			A.push(2);
 			A.push(1);
-			size_t c = 5;
-			Assert::AreEqual(c, A.size());
+			Assert::AreEqual(5, A.size());
 			Stack<int> B(6); 
-			size_t d = 1;
-			Assert::AreEqual(d, B.size());
+			Assert::AreEqual(1, B.size());
 		}
 
 		TEST_METHOD(emplace_Test)
@@ -117,25 +111,23 @@ namespace StackTest
 		{
 			Stack<int> A(5); //A
 			A.push(4); //2 elems: 4, 5
-			size_t A_size = 2;
 			Assert::AreEqual(4, A.top());
-			Assert::AreEqual(A_size, A.size());
+			Assert::AreEqual(2, A.size());
 
 			Stack<int> B(0); //B
 			B.push(1); 
 			B.push(2); 
 			B.push(3); //4 elems: 3, 2, 1, 0
-			size_t B_size = 4;
-			Assert::AreEqual(B_size, B.size());
+			
+			Assert::AreEqual(4, B.size());
 			Assert::AreEqual(3, B.top());
 			A.swap(B); // A is B // B is A
 			
 			Assert::AreEqual( 4, B.top()); 
-			Assert::AreEqual(A_size, B.size());
+			Assert::AreEqual(2, B.size());
 
 			Assert::AreEqual(3, A.top()); 
-			Assert::AreEqual(B_size, A.size());
-					   
+			Assert::AreEqual(4, A.size());		   
 		}
 	};
 }

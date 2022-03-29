@@ -32,7 +32,7 @@ public:
 	void clear();               //clear all nodes
 	T pop();                    // return item and remove first node
 	bool empty() const;         // check if is empty
-	size_t size() const;        //count number of list structures
+	int size() const;        //count number of list structures
 	void printStack() const;    //print all elements
 	T top() const;              //watch top element 
 	void emplace(T&);           //== push, but adds the object, not a copy of it
@@ -93,7 +93,7 @@ void Stack<T>::clear()
 }
 
 template <typename T>
-size_t Stack<T>::size() const
+int Stack<T>::size() const
 {
 	if (empty()) return 0;  //if empty size == 0;
 	size_t counter = 1;     //Top already points at Node if not empty, so that = 1;
