@@ -6,50 +6,36 @@ using std::cout;
 
 int main()
 {
-	SetOfStacks<int> A;
+	SetOfStacks<char> A;
 
-	A.push(5);
-	A.push(4);
-	A.push(3);
-	A.push(2);
-	A.push(1);
-	A.push(0);
-	A.push(-1);
-	A.push(-2);
-	A.push(-3);
-	A.push(-4);
-	A.push(-5);
 
-	cout << A.pop(); 
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
-	cout << A.pop();
+	A.push('a'); //zero five [0] Stack
+	A.push('b');
+	A.push('c');
+	A.push('d');
+	A.push('e');
+
+	A.push('f'); //first five [1] Stack
+	A.push('g');
+	A.push('h');
+	A.push('i');
+	A.push('j');
+
 	
-	try
-	{
-		cout << A.pop(); //7-th pop
-	}
-	catch (const char* b)
-	{
-		cout << b;
-	}
+
+	A.push('k'); //second five [2] Stack
+	A.push('l'); 
+	cout << A.popAt(1); //expect j
+	cout << A.popAt(1); //expect i
+	cout << A.pop();    //expect l
+	
+	
+		
+	
+
 	
 
 
-
-
-
-
-
-
-	
 
 
 	system("pause");
