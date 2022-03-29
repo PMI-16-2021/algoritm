@@ -3,7 +3,7 @@
 //
 // Created by Sofia Demchuk on 13.03.2022.
 //
-static int Array[10]={28,61,84,0,34,11,6,8,5,2};
+static int Array[10]={28,61,84,0,34,1,6,8,5,2};
 static int sortedArray[10]={0,2,5,6,8,11,28,34,61,84};
 static int contraryArray[10]={84,61,34,28,11,8,6,5,2,0};
 static int orderArray[10]={0,2,5,6,8,11,28,34,61,84};

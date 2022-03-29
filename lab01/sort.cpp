@@ -2,10 +2,6 @@
 #include "sort.h"
 
 
-
-
-
-
 void printOn(const int *arr, int n) {
     for(int i=0;i<n;++i){
         cout<<arr[i]<<" ";
@@ -27,7 +23,7 @@ void BubbleSort(int *arr, int n) {
     cout<<"\nSorted array by BubbleSort:";
     printOn(arr,n);
 }
-void heapify(int arr[], int n, int i)
+void heapify(int arr[], int n, int i) // створюємо дерево бінарне
 {
     int max = i;
 
@@ -41,29 +37,21 @@ void heapify(int arr[], int n, int i)
     if (right < n && arr[right] > arr[max])
         max = right;
 
-
-    if (max != i)
-    {
+    if (max != i){
         swap(arr[i], arr[max]);
-
-
         heapify(arr, n, max);
     }
 }
-void heapSort(int *arr, int n)
-{
-
+void heapSort(int *arr, int n){
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, n, i);
 
 
-    for (int i=n-1; i>=0; i--)
-    {
+    for (int i=n-1; i>=0; i--){
 
-        swap(arr[0], arr[i]);
+        swap(arr[0], arr[i]); //міняємо нульовий і макс елемень т
 
-
-        heapify(arr, i, 0);
+        heapify(arr, i, 0);//тим самим відрізаючи гілку з макс елемн
     }
     cout<<"\nSorted array by HeapSort : ";
     printOn(arr,n);
@@ -82,9 +70,9 @@ int getMax(int *arr, int n) {
 
 void shellSort(int* arr, int n) {
 
-    for (int interval = n / 2; interval > 0; interval /= 2) {
+    for (int interval = n / 2; interval > 0; interval /= 2) { // кожен раз /2
         for (int i = interval; i < n; i += 1) {
-            int temp = arr[i];
+            int temp = arr[i];//створюємо тимчасову звінну куди закидаємо елемент
             int j;
             for (j = i; j >= interval && arr[j - interval] > temp; j -= interval) {
                 arr[j] = arr[j - interval];
@@ -99,17 +87,15 @@ void shellSort(int* arr, int n) {
 void BucketSort(int *arr, int n) {
     int max= getMax(arr,n);
     int bucket[max];
-    for(int i=0;i<=max;++i){
+    for(int i=0;i<=max;++i){//зануляємо
         bucket[i]=0;
     }
     for(int i=0;i<n;++i) {
         bucket[arr[i]]++;
     }
-    for(int i = 0, j = 0; i <= max; i++)
-    {
-        while (bucket[i] > 0)
-        {
-            arr[j++] = i;
+    for(int i = 0, j = 0; i <= max; i++){
+        while (bucket[i] > 0){
+            arr[j++] = i;//працюємо з двома масивами
             bucket[i]--;
         }
     }
