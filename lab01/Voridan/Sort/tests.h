@@ -1,0 +1,17 @@
+#pragma once
+void InsertionSortTest();
+int Test1_01();
+int Test1_02();
+int Test1_03();
+void QuickSortTest();
+int Test2_01();
+int Test2_02();
+int Test2_03();
+void CountingSortTest();
+int Test3_01();
+int Test3_02();
+int Test3_03();
+void MergeSortTest();
+int Test4_01();
+int Test4_02();
+int Test4_03();
