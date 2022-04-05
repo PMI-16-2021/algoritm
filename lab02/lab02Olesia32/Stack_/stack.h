@@ -125,16 +125,13 @@ void Stack<T>::Empty() {
 }
 
 template<typename T>
-void Stack<T>::Print()
-{
+void Stack<T>::Print() {
 	if (IsEmpty()) {
 		std::cout << "Stack is empty.";
 	}
-	else
-	{
+	else {
 		NodeStack<T>* temp = top; 
-		while (temp != nullptr)
-		{
+		while (temp != nullptr) {
 			std::cout << temp->value << "; ";
 			temp = temp->link;
 		}
