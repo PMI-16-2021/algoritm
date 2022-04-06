@@ -1,11 +1,15 @@
 #pragma once
 #include <iostream>
 
+struct NodeStack{
+	int value;
+	NodeStack* next;
+	NodeStack(int val, NodeStack* nex);
+};
+
 class Stack {
 private:
-	int value;
-	Stack* next;
-	Stack* top;
+	NodeStack* top;
 	
 public:
 	//static Stack* top;
@@ -13,7 +17,7 @@ public:
 	Stack();
 	Stack(int);
 
-	int getValue() const;
+	//int getValue() const;
 
 	void emplace(int);
 	void push(int);
