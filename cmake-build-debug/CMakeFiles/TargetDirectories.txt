@@ -1,0 +1,3 @@
+/Users/bogdanvorobienko/Desktop/algoritm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/bogdanvorobienko/Desktop/algoritm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bogdanvorobienko/Desktop/algoritm/cmake-build-debug/CMakeFiles/algoritm.dir
