@@ -1,5 +1,7 @@
 # Черга з пріоритетом
 ####`deadline 19/04/22`
+
+
 в черзі для зберігання об'єктів використати (власний) однозвязний список
 
 створити структуру `Pair`
@@ -23,7 +25,7 @@
 
 
 ###for example
-template <typename T>
+```template <typename T>
 struct Node(){
     T value;
     N * n
@@ -60,4 +62,4 @@ class maList(){
 struct Node(){
     Pair<int> value;
     N * n
-}
+}```
