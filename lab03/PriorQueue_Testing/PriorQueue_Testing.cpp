@@ -95,7 +95,6 @@ namespace PriorQueueTesting
 			Assert::AreEqual(4, A.dequeue());
 			Assert::AreEqual(2, A.dequeue());
 			Assert::IsTrue(A.isEmpty());
-
 		}
 
 		TEST_METHOD(size_Test)
@@ -117,8 +116,6 @@ namespace PriorQueueTesting
 			Assert::AreEqual(5, A.dequeue()); //Queue: *empty*
 			Assert::AreEqual(0, A.size());
 			Assert::IsTrue(A.isEmpty());
-			
-
 		}
 	};
 }

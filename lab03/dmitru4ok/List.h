@@ -147,7 +147,6 @@ public:
 		tail->next = nullptr;
 		delete victim;
 	}
-
 };
 
 

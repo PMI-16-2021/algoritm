@@ -62,7 +62,6 @@ public:
 		std::cout << '\n';
 	}
 
-
 	const T& dequeue()
 	{
 		if (isEmpty())

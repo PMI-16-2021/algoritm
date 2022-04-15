@@ -10,7 +10,6 @@ int main()
 	PriorityQueue<List, Pair, double> B;
 	B.print();
 
-
 	B.enqueue(2.5, 4);
 	B.dequeue();
 	
@@ -36,19 +35,6 @@ int main()
 
 	cout << '\n';
 	B.print();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
