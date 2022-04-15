@@ -6,26 +6,37 @@ using std::cout;
 
 int main()
 {
-	List<Pair,int> A;
-	A.addBack(Pair<int>(1));
-	if (A.isEmpty()) cout << "OK";
 
-	A.addFront(Pair<int>(3));
-	A.addFront(Pair<int>(5));
-	A.addFront(Pair<int>(7));
-	A.addBack(Pair<int>(2));
+	PriorityQueue<List, Pair, double> B;
+	B.print();
+
+
+	B.enqueue(2.5, 4);
+	B.dequeue();
 	
+	B.enqueue(3.1, 5);
+	B.enqueue(1.33, 3);
+	B.enqueue(0.9, 2);
+	B.enqueue(1, 0); 
+	B.enqueue(17.543, 0);
+	B.enqueue(-10, 1);
+	B.enqueue(3.1, 6);
 
-	A.add(Pair<int>(2), A.getHead());
+	cout << "SIZE: " << B.size() << '\n';
+	B.print();
+	cout << "TOP: " << B.top() << '\n';
+	B.print();
 
-	A.printList();
+	cout << '\n';
+	while (!B.isEmpty())
+	{
+		cout << B.dequeue() << ": ";
+		cout << "SIZE: " << B.size() << '\n';
+	}
 
+	cout << '\n';
+	B.print();
 
-	A.printList();
-	PriorityQueue<int, Pair> B;
-
-	//Pair<int> a = int(3);
-	//cout << a.value;
 
 
 

@@ -673,3 +673,5 @@ FodyWeavers.xsd
 *.vcxproj
 *.filters
 *.sln
+lab03/PriorQueue_Testing/pch.h
+lab03/PriorQueue_Testing/pch.cpp
