@@ -20,8 +20,9 @@ private:
 	int m_size;
 
 public:
-	HashTable() : m_size(5), m_memory(m_size) {}
+	HashTable() : m_size(5), m_memory(new TableElem[m_size]) {}
 	HashTable(int _size);
+	~HashTable();
 	void add(string k);
 
 };
@@ -31,6 +32,12 @@ HashTable<T>::HashTable(int _size)
 {
 	m_size = (_size > 0) ? _size : 5;
 	m_memory = new TableElem[m_size];
+}
+
+template<typename T>
+HashTable<T>::~HashTable()
+{
+	delete[] m_memory;
 }
 
 template<typename T>
