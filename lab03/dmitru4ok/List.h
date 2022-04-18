@@ -7,25 +7,30 @@ struct Pair
 	T value;
 	int priority; //0 - MAX; 1,2,3,4 ...... bigger - lower
 	Pair(T val = T(), int prior = 0) : value(val), priority(prior) {}
-	Pair& operator =(const Pair& other)
-	{
-		this->priority = other.priority;
-		this->value = other.value;
-		return *this;
-	}
+	Pair& operator =(const Pair& other);
 };
+
+//operator = for Pair structures
+template<typename T>
+Pair<T>& Pair<T>::operator=(const Pair<T>& other)
+{
+	this->priority = other.priority;
+	this->value = other.value;
+	return *this;
+}
+
 
 //struct to be the main unit of ListNode
 template<typename T>
 struct ListNode
 {
-	Pair<T> field; //here - holds Pair structures (must have priority and value fields)
-	ListNode<T>* next;
+	Pair<T> field;                                       //Pair: T value and int priority
+	ListNode<T>* next;                                    //pointer to next
 
 	ListNode(T data, int prior,  ListNode<T>* _next = nullptr): next(_next)
 	{
 		field = Pair<T>(data, (prior >= 0) ? prior : 0); //field = Pair of data
-	}                                                   //if prior param >= 0 than then prior, else - 0 
+	}                                                    //if prior param >= 0 than then prior, else - 0 
 };
 
 //tempate class List
