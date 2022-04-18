@@ -7,6 +7,7 @@ using std::cout;
 int main()
 {
 
+<<<<<<< Updated upstream
 	PriorityQueue<List, Pair, double> B;
 	B.print();
 
@@ -17,6 +18,18 @@ int main()
 	B.enqueue(1.33, 3);
 	B.enqueue(0.9, 2);
 	B.enqueue(1, 0); 
+=======
+	PriorityQueue<double> B;
+	B.print();
+	
+	B.enqueue(2.5, 4);
+	B.dequeue();
+
+	B.enqueue(3.1, 5);
+	B.enqueue(1.33, 3);
+	B.enqueue(0.9, 2);
+	B.enqueue(1, 0);
+>>>>>>> Stashed changes
 	B.enqueue(17.543, 0);
 	B.enqueue(-10, 1);
 	B.enqueue(3.1, 6);
@@ -41,4 +54,8 @@ int main()
 
 	system("pause");
 	return 0;
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

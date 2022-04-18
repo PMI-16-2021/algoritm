@@ -12,7 +12,11 @@ namespace PriorQueueTesting
 		
 		TEST_METHOD(isEmpty_Test)
 		{
+<<<<<<< Updated upstream
 			PriorityQueue<> A; 
+=======
+			PriorityQueue<int> A;
+>>>>>>> Stashed changes
 			Assert::IsTrue(A.isEmpty());
 
 			A.enqueue(3, 0);
@@ -28,7 +32,11 @@ namespace PriorQueueTesting
 
 		TEST_METHOD(dequeue_Test)
 		{
+<<<<<<< Updated upstream
 			PriorityQueue<> A;
+=======
+			PriorityQueue<int> A;
+>>>>>>> Stashed changes
 			try
 			{
 				A.dequeue();
@@ -43,14 +51,22 @@ namespace PriorQueueTesting
 			A.enqueue(5, 0); // Queue: 5(pr0), 3(pr1)
 			A.enqueue(4, 0);  // Queue: 5(pr0), 4(pr0), 3(pr1)
 
+<<<<<<< Updated upstream
 			Assert::AreEqual(5, A.dequeue()); 
+=======
+			Assert::AreEqual(5, A.dequeue());
+>>>>>>> Stashed changes
 			Assert::AreEqual(4, A.dequeue());
 			Assert::AreEqual(3, A.dequeue());
 		}
 
 		TEST_METHOD(top_Test)
 		{
+<<<<<<< Updated upstream
 			PriorityQueue<List, Pair, double> A;
+=======
+			PriorityQueue<double> A;
+>>>>>>> Stashed changes
 			try
 			{
 				A.top();
@@ -73,7 +89,11 @@ namespace PriorQueueTesting
 
 		TEST_METHOD(enqueue_Test)
 		{
+<<<<<<< Updated upstream
 			PriorityQueue<> A;
+=======
+			PriorityQueue<int> A;
+>>>>>>> Stashed changes
 			Assert::IsTrue(A.isEmpty());
 
 			try
@@ -81,7 +101,11 @@ namespace PriorQueueTesting
 				A.enqueue(3, -1);
 				Assert::Fail();
 			}
+<<<<<<< Updated upstream
 			catch (const char* msg )
+=======
+			catch (const char* msg)
+>>>>>>> Stashed changes
 			{
 				std::cerr << msg;
 			}
@@ -99,7 +123,11 @@ namespace PriorQueueTesting
 
 		TEST_METHOD(size_Test)
 		{
+<<<<<<< Updated upstream
 			PriorityQueue<> A;
+=======
+			PriorityQueue<int> A;
+>>>>>>> Stashed changes
 			Assert::IsTrue(A.isEmpty());
 			Assert::AreEqual(0, A.size());
 			A.enqueue(4, 0); //Queue: 4(pr0)
