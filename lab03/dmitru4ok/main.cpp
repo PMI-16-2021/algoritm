@@ -35,7 +35,14 @@ int main()
 
 	cout << '\n';
 	B.print();
+	cout << "\n\n";
 
+	B.clear();
+
+	if (B.isEmpty() && B.size() == 0)
+	{
+		cout << "Works WELL.\n";
+	}
 
 
 
