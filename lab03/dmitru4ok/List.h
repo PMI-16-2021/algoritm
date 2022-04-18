@@ -24,7 +24,7 @@ Pair<T>& Pair<T>::operator=(const Pair<T>& other)
 template<typename T>
 struct ListNode
 {
-	Pair<T> field;                                       //Pair: T value and int priority
+	Pair<T> field;                                        //Pair: T value and int priority
 	ListNode<T>* next;                                    //pointer to next
 
 	ListNode(T data, int prior,  ListNode<T>* _next = nullptr): next(_next)
