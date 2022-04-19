@@ -15,7 +15,7 @@ public:
 	~PriorityQueue() {}
 
 	void enqueue(T elem, int prior);                 //add ListNode with the element to the Queue   - may be both const and O(n)!!!
-	const T& dequeue();                              //remove ListNode and return value             - const
+	T dequeue();                                     //remove ListNode and return value             - const
 	const T& top()const;                             //check value in the top ListNode              - const
 	void print()const;                               //print all values                             - O(n)!!!
 	bool isEmpty()const { return object.isEmpty(); } //check if there are any nodes                 - const      
@@ -79,7 +79,7 @@ void PriorityQueue<T>::clear()
 
 //remove ListNode and return value
 template<typename T>
-const T& PriorityQueue<T>::dequeue()
+T PriorityQueue<T>::dequeue()
 {
 	if (isEmpty())  //nothing to dequeue => exception
 	{
