@@ -9,12 +9,12 @@ namespace QueueTest
 	TEST_CLASS(QueueTest)
 	{
 	public:
-		
+
 		TEST_METHOD(TestConstructors)
 		{
 			QueueP<int> Q1;
 			Q1.Push(10, 1);
-			Q1.Push(5,2);
+			Q1.Push(5, 2);
 			QueueP<int> Q2(Q1);
 			Assert::AreEqual(Q2.Count(), 2);
 		}
@@ -92,6 +92,20 @@ namespace QueueTest
 			Q1.Push(5, 10);
 			Q1.Clear();
 			Assert::AreEqual(Q1.Count(), 0);
+		}
+
+		TEST_METHOD(TestIsEmptyTop)
+		{
+			QueueP<int> Q1;
+			Q1.Push(10, 1);
+			Q1.Push(5, 2);
+			Q1.Push(5, 5);
+			Q1.Push(13, 11);
+			Q1.Push(12, 7);
+			Q1.Push(7, 10);
+			Assert::AreEqual(Q1.Top(), 13);
+			Q1.Clear();
+			Assert::AreEqual(Q1.IsEmpty(), true);
 		}
 	};
 }

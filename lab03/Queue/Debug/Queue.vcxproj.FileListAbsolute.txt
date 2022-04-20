@@ -1,1 +1,2 @@
 C:\Users\USER\Desktop\Queue\Debug\Queue.exe
+C:\Users\USER\Desktop\LAB_01\lab03\Queue\Debug\Queue.exe

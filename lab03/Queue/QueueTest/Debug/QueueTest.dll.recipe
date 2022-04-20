@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\USER\Desktop\Queue\Debug\Queue.exe</FullPath>
+      <FullPath>C:\Users\USER\Desktop\LAB_01\lab03\Queue\Debug\Queue.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\USER\Desktop\Queue\Debug\QueueTest.dll</FullPath>
+      <FullPath>C:\Users\USER\Desktop\LAB_01\lab03\Queue\Debug\QueueTest.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

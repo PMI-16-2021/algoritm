@@ -27,11 +27,12 @@ int main()
 	Q3.Print("Q3");
 
 	QueueP<int> Q4;
-	Q4 = Q3 = Q1; 
+	Q4 = Q3 = Q1;
 	Q4.Print("Q4");
 
 	cout << "count = " << Q4.Count() << endl;
 	Q4.Clear();
 	Q4.Print("Q4");
 	cout << "count = " << Q4.Count() << endl;
+	if (Q4.IsEmpty()) cout << "Q4 is empty" << endl;
 }

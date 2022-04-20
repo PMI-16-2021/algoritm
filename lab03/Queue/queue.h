@@ -49,6 +49,8 @@ public:
     {
         return count;
     }
+    bool IsEmpty();
+    T Top();
     void Print(const char* objName);
 };
 
@@ -139,6 +141,26 @@ T QueueP<T>::Pop()
     P = P2;
     return item;
 }
+
+template<typename T>
+T QueueP<T>::Top()
+{
+    if (count == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return A[0];
+    }
+}
+
+template<typename T>
+bool QueueP<T>::IsEmpty()
+{
+    return count == 0;
+}
+
 
 template <typename T>
 void QueueP<T>::Print(const char* objName)
