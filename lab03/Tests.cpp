@@ -10,6 +10,7 @@ bool TestEnQueue() {
     {
         return true;
     }
+
     return false;
 }
 
@@ -23,6 +24,7 @@ bool TestDequeue() {
     {
         return true;
     }
+
     return false;
 }
 
@@ -34,24 +36,21 @@ bool TestIsEmpty() {
     {
         return true;
     }
+
     return false;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+bool TestClearAll()
+{
+    Queue_withP<string> Q;
+    Q.enqueue("a",1);
+    Q.enqueue("c",3);
+    Q.enqueue("b",2);
+    assert(Q.isEmpty()==false);
+    Q.clear();
+    assert(Q.isEmpty()==true);
+    return true;
+}
 
 
 void Test1()
@@ -70,4 +69,11 @@ void Test3()
     assert(TestIsEmpty()==true);
     std::cout<<"Test on isEmpty() is PASSED!\n";
 }
+
+void Test4()
+{
+    assert(TestClearAll()==true);
+    std::cout<<"Test on clear() is PASSED!\n";
+}
+
 

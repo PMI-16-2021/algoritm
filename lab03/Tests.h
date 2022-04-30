@@ -7,8 +7,9 @@ using namespace std;
 bool TestEnQueue(); // test on method enqueue() - add a member of queue
 bool TestDequeue(); // test on method dequeue() - delete the top
 bool TestIsEmpty(); // test on method isEmpty() - check if a queue is empty or not
-
+bool TestClearAll();
 
 void Test1();
 void Test2();
 void Test3();
+void Test4();
