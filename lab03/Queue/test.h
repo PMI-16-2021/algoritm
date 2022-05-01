@@ -1,8 +1,8 @@
-//
-// Created by Богдан Воробієнко on 01.05.2022.
-//
+#pragma once
 
-#ifndef QUEUE_TEST_H
-#define QUEUE_TEST_H
-
-#endif //QUEUE_TEST_H
+void TestSize();
+void TestTop();
+void TestEmpty();
+void TestEnqueue();
+void TestDequeue();
+void TestClear();

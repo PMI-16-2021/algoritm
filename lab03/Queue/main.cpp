@@ -1,3 +1,15 @@
-//
-// Created by Богдан Воробієнко on 30.04.2022.
-//
+#include "list.h"
+#include "priority_queue.h"
+#include "test.h"
+
+int main() {
+    TestSize();
+    TestTop();
+    TestEmpty();
+    TestClear();
+    TestEnqueue();
+    TestDequeue();
+    return 0;
+}
+
+
