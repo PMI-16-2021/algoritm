@@ -106,7 +106,9 @@ void CountSort(int* array, size_t size_of_array) {
 	int temp = 0;
 	for (int i = 0; i < size_of_counters; ++i) {
 		if (counters_array[i] != 0) {
-			for (int j = 0; j < counters_array[i]; ++j) array[temp++] = min_element + i;
+			for (int j = 0; j < counters_array[i]; ++j) {
+				array[temp++] = min_element + i;
+			}
 		}
 	}
 	delete[]counters_array;
