@@ -670,3 +670,6 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml,
 
+*.cpp
+lab01/yuullia/Sorting/SortingUnitTest/pch.h
+lab01/dmitru4ok/algoritm/algos.cpp
