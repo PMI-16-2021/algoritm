@@ -80,7 +80,7 @@ std::string PolishRecord(std::string& notation) {
     }
     return output;
 }
-//234_89_+87_9_+-
+
 double Calculate(const std::string& notation) {
     double result = 0;
     std::string num;

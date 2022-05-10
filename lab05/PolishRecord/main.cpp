@@ -13,7 +13,7 @@ int main() {
 }
 
 void Test() {
-    std::string notation = "12^2-(90+23)+10/2";  // result : 16
+    std::string notation = "12^2-(90+23)+10/2";  // result : 36
     if(Calculate(PolishRecord(notation)) == 36){
         std::cout << "Test passed\n";
     }
