@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include "Stack.h"
 using std::string;
 using std::stod;
 using std::to_string;
@@ -19,7 +20,7 @@ size_t GetPriority(const string a);
 bool IsOperation(const string a);
 
 //check if parentheses are balanced correctly
-bool balanceStr(const string b);
+bool BalanceStr(const string b);
 
 //class-exception if brackets are badly-balanced
 class BadBracketBalance

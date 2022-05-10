@@ -1,11 +1,11 @@
 #include "polishRecord.h"
-#include "Stack.h"
+
 typedef string::const_iterator symb; //symb == string::const_iterator
                
 
 string PolishRecord(string str)
 {
-	if (!balanceStr(str))                          //check whether brackets are well-balanced
+	if (!BalanceStr(str))                          //check whether brackets are well-balanced
 	{
 		throw BadBracketBalance(str);              //exception 
 	}
@@ -160,7 +160,7 @@ double Calculate(string revPolish)
 }
 
 //check brackets balance
-bool balanceStr(const string b)
+bool BalanceStr(const string b)
 {
 	int oCount = 0;     //open 
 	int clCount = 0;    //close
