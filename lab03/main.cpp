@@ -1,26 +1,56 @@
 #include <iostream>
 using namespace std;
 #include <string>
-#include "header.h"
+#include "list.h"
 #include "Tests.h"
+#include "Queue.h"
 int main() {
-  Queue_withP<string> Q;
-  Q.enqueue("f",5);
-  Q.enqueue("a11",1);
-  Q.enqueue("a1",1);
-  Q.enqueue("c",3);
-  Q.enqueue("d",4);
-  Q.enqueue("b",2);
-  Q.print();
+//    List<int> L;
+//   L.push_front(1);
+//   L.print();
+//   cout<<"\n\n";
+//   L.push_back(6);
+//   L.push_front(9);
+//    L.push_front(2);
+//    L.push_back(3);
+//   L.print();
+//   L.pop(2);
+//    cout<<"\n\n";
+//   L.print();
+//    cout<<"\n"<<L.getSize();
+//    cout<<"\n\n";
+//    L.insert(2,4);
+//    L.print();
+//    L.clear();
+//    L.print();
+
+//   PQueue<int> P;
+//    P.enqueue(5,2);
+//    P.enqueue(6,1);
+//    P.enqueue(9,4);
+//    P.enqueue(7,3);
+//    P.print();
+//    P.dequeue();
+//    cout<<"\n\n";
+//    P.print();
+//
+//    P.clear();
+//    cout<<"\n\n";
+//    P.print();
 
 
-  Q.print();
+    Test1();
+    Test2();
+    Test3();
+    Test4();
+    Test5();
+    Test6();
+    Test7();
+    Test8();
+    Test9();
 
 
 
-  Test1();
-  Test2();
-  Test3();
-  Test4();
+
     return 0;
 }

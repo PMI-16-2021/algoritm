@@ -54,10 +54,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sofiademchuk/Documents/GitHub/algoritm/lab03
+CMAKE_SOURCE_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab03
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/lab03.dir/clean
 CMakeFiles/lab03.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab03.dir/build.make CMakeFiles/lab03.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target lab03"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target lab03"
 .PHONY : CMakeFiles/lab03.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab03.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab03.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/lab03.dir/rule
 
 # Convenience name for target.

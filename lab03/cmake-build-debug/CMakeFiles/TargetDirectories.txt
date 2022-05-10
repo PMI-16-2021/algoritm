@@ -1,3 +1,3 @@
-/Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/sofiademchuk/Documents/GitHub/algoritm/lab03/cmake-build-debug/CMakeFiles/lab03.dir
+/Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sofiademchuk/Desktop/CLionProjects/lab03/cmake-build-debug/CMakeFiles/lab03.dir

@@ -3,4 +3,4 @@ project(lab03)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(lab03 main.cpp header.h Tests.cpp Tests.h)
+add_executable(lab03 main.cpp header.h Tests.cpp Tests.h list.h list.cpp Queue.h)

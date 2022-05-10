@@ -23,6 +23,7 @@ public:
     void dequeue(); // delete (pop) a value from head of queue == delete a mem with the highest priority
     void print(); // print all members
     void clear();
+
 };
 
 template< typename T>
@@ -31,6 +32,7 @@ void Queue_withP<T>::print() {
     if (top == nullptr)
     {
        throw  "\nStack is empty\n";
+
     }
     else
     {
@@ -42,7 +44,6 @@ void Queue_withP<T>::print() {
         }
     }
 }
-
 
 template<typename T>
 T Queue_withP<T>::getTop()
@@ -57,7 +58,6 @@ bool Queue_withP<T>::isEmpty()
     {
         return true;
     }
-
     return false;
 }
 
@@ -98,6 +98,7 @@ void Queue_withP<T>::dequeue()
     Member<T>* temp = top;
      top=top->link;
      delete temp;
+
 }
 
 template<typename T>
