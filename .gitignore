@@ -677,3 +677,5 @@ lab03/TESTS/pch.cpp
 lab02/dmitru4ok/README.md
 lab04/dmitru4ok/TableTesting/pch.cpp
 lab04/dmitru4ok/TableTesting/pch.h
+lab05/PolishNotationTest/pch.cpp
+lab05/PolishNotationTest/pch.h
