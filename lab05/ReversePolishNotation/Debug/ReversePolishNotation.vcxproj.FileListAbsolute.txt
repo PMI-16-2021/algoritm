@@ -1,1 +1,2 @@
 C:\Users\USER\Desktop\ReversePolishNotation\Debug\ReversePolishNotation.exe
+C:\Users\USER\Desktop\LAB_01\lab05\ReversePolishNotation\Debug\ReversePolishNotation.exe

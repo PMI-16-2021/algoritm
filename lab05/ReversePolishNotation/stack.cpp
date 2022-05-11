@@ -1,201 +1,156 @@
-#include "Stack.h"
+#include "stack.h"
+#include <string>
+#include <cmath>
 
-Stack::Stack(const Stack& S)
+bool isNum(char m_num)
 {
-    quantity = S.quantity;
-    stack = new char[quantity];
-    for (int i = 0; i < quantity; ++i)
-    {
-        stack[i] = S.stack[i];
-    }
+	switch (m_num)
+	{
+	case '0':
+	case '1':
+	case '2':
+	case '3':
+	case '4':
+	case '5':
+	case '6':
+	case '7':
+	case '8':
+	case '9':
+		return true;
+	default:
+		return false;
+	}
 }
 
-Stack Stack::operator=(const Stack& S)
+bool isOperator(char m_operator)
 {
-    if (this == &S) return *this;
-    if (size() > 0) delete[] stack;
-    quantity = S.quantity;
-    stack = new char[quantity];
-    for (int i = 0; i < quantity; ++i)
-    {
-        stack[i] = S.stack[i];
-    }
-    return *this;
+	switch (m_operator)
+	{
+	case '+':
+	case '-':
+	case '*':
+	case '/':
+	case '^':
+		return true;
+	default:
+		return false;
+	}
 }
 
-char Stack::push(char new_element)
+int priority(char m_priority)
 {
-    char* temp = stack;
-    ++quantity;
-    stack = new char[quantity];
-    for (int i = 0; i < quantity - 1; ++i)
-    {
-        stack[i] = temp[i];
-    }
-    stack[quantity - 1] = new_element;
-    return new_element;
+	switch (m_priority)
+	{
+	case '^':
+		return 3;
+	case '*':
+	case '/':
+		return 2;
+	case '+':
+	case '-':
+		return 1;
+	default:
+		return -1;
+	}
 }
 
-char Stack::pop()
+std::string infixToPostfix(std::string infix)
 {
-    if (quantity == 0)
-    {
-        return 0;
-    }
-    char pop = stack[quantity - 1];
-    quantity--;
-    return pop;
+	Stack<char> stack;
+	std::string res;
+	for (int i = 0; i < infix.length(); ++i)
+	{
+		char temp = infix[i];
+		if (isNum(temp))
+		{
+			res += temp;
+			if (!isNum(infix[i + 1]))
+			{
+				res += ' ';
+			}
+		}
+		else if (temp == '(')
+		{
+			stack.push(temp);
+		}
+		else if (temp == ')')
+		{
+			while (stack.top() != '(')
+			{
+				res += stack.top();
+				stack.pop();
+				res += ' ';
+			}
+			stack.pop();
+		}
+		else
+		{
+			while (!stack.isEmpty() && priority(infix[i]) <= priority(stack.top()))
+			{
+				res += stack.pop();
+				res += ' ';
+			}
+			stack.push(temp);
+		}
+	}
+	while (!stack.isEmpty())
+	{
+		res += stack.pop();
+	}
+	return res;
 }
 
-bool Stack::isEmpty()
+double action(std::string postfix)
 {
-    return quantity == 0;
-}
-
-char Stack::top()
-{
-    if (quantity == 0)
-    {
-        return 0;
-    }
-    else return stack[quantity - 1];
-}
-
-void Stack::print()
-{
-    if (isEmpty()) cout << "Stack is empty!" << endl;
-    else
-    {
-        for (int i = quantity - 1; i >= 0; --i)
-        {
-            cout << quantity - i << " item: " << stack[i] << "\t";
-        }
-        cout << endl;
-    }
-}
-
-bool emptySpace(char symbol)
-{
-    if (symbol == ' ' || symbol == '\t')
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
-}
-
-string infixToPostfix(string infix)
-{
-    string postfix = "";
-    Stack stack;
-    int inf;
-    char next;
-    char symbol;
-    for (inf = 0; inf < infix.length(); inf++)
-    {
-        symbol = infix[inf];
-        if (!emptySpace(symbol))
-        {
-            switch (symbol)
-            {
-            case '(':
-                stack.push(symbol);
-                break;
-            case ')':
-                while ((next = stack.pop()) && next != '(')
-                {
-                    postfix += next;
-                }
-                break;
-            case '+':
-            case '-':
-            case '*':
-            case '/':
-            case '%':
-            case '^':
-                while (!stack.isEmpty() && priority(symbol) <= priority(stack.top()))
-                {
-                    postfix += stack.pop();
-                }
-                stack.push(symbol);
-                break;
-            default:
-                postfix += symbol;
-            }
-        }
-    }
-    while (!stack.isEmpty())
-    {
-        postfix += stack.pop();
-    }
-    return postfix;
-}
-
-int priority(char symbol)
-{
-    switch (symbol)
-    {
-    case '(':
-        return 0;
-    case '+':
-    case '-':
-        return 1;
-    case '*':
-    case '/':
-    case '%':
-        return 2;
-    case '^':
-        return 3;
-    default:
-        return -1;
-    }
-}
-
-bool isNum(char symbol)
-{
-    return (symbol >= '0' && symbol <= '9');
-}
-
-int action(string postfix)
-{
-    Stack stack;
-    int a, b, i, temp_result, result;
-    for (i = 0; i < postfix.length(); i++)
-    {
-        if (isNum(postfix[i]))
-        {
-            stack.push(postfix[i] - '0');
-        }
-
-        else
-        {
-            a = stack.pop();
-            b = stack.pop();
-            switch (postfix[i])
-            {
-            case '+':
-                temp_result = b + a;
-                break;
-            case '-':
-                temp_result = b - a;
-                break;
-            case '*':
-                temp_result = b * a;
-                break;
-            case '/':
-                temp_result = b / a;
-                break;
-            case '%':
-                temp_result = b % a;
-                break;
-            case '^':
-                temp_result = pow(b, a);
-            }
-            stack.push(temp_result);
-        }
-    }
-    result = stack.pop();
-    return result;
+	double firstNum, secondNum, result;
+	std::string temp;
+	Stack<std::string> stack;
+	for (int i = 0; i < postfix.length(); ++i)
+	{
+		while (postfix[i] == ' ')
+		{
+			++i;
+		}
+		if (isNum(postfix[i]))
+		{
+			while (isNum(postfix[i]))
+			{
+				temp += postfix[i];
+				++i;
+			}
+			stack.push(temp.c_str());
+			temp = "";
+		}
+		else if (isOperator(postfix[i]))
+		{
+			firstNum = std::stod(stack.pop());
+			secondNum = std::stod(stack.pop());
+			if (postfix[i] == '+')
+			{
+				result = firstNum + secondNum;
+			}
+			if (postfix[i] == '-')
+			{
+				result = secondNum - firstNum;
+			}
+			if (postfix[i] == '*')
+			{
+				result = firstNum * secondNum;
+			}
+			if (postfix[i] == '/')
+			{
+				if (firstNum == 0)
+				{
+					throw "Incorrect input";
+				}
+				result = secondNum / firstNum;
+			}
+			if (postfix[i] == '^')
+			{
+				result = pow(secondNum, firstNum);
+			}
+			stack.push(std::to_string(result));
+		}
+	}
+	return std::stod(stack.pop());
 }

@@ -9,33 +9,32 @@ namespace ReversePolishNotationTest
 	TEST_CLASS(ReversePolishNotationTest)
 	{
 	public:
-		
+
 		TEST_METHOD(TestInfixToPostfix)
 		{
-			string infix = "5+6/2";
-			string postfix = "562/+";
+			std::string infix = "(5+5)/2*3+(7-2)";
+			std::string postfix = "5 5 + 2 / 3 * 7 2 - +";
 			Assert::AreEqual(infixToPostfix(infix), postfix);
 		}
 
 		TEST_METHOD(TestAction)
 		{
-			string infix = "5+6/2";
-			string postfix = "562/+";
-			Assert::AreEqual(action(infixToPostfix(infix)), 8);
+			std::string infix = "(5+5)/2*3+(7-2)";
+			Assert::AreEqual(action(infixToPostfix(infix)), 20.);
 		}
 
 		TEST_METHOD(TestIsNum)
 		{
-			string postfix = "879+-";
+			std::string postfix = "879+-";
 			char num = postfix[2];
 			Assert::AreEqual(isNum(num), true);
 		}
 
-		TEST_METHOD(TestEmptySpace)
+		TEST_METHOD(TestIsOperator)
 		{
-			string postfix = "879+- ";
-			char num = postfix[5];
-			Assert::AreEqual(emptySpace(num), true);
+			std::string postfix = "879+-";
+			char myOperator = postfix[3];
+			Assert::AreEqual(isOperator(myOperator), true);
 		}
 	};
 }
