@@ -1,7 +1,6 @@
 #include <iostream>
 #include "funcs.h"
-
-void Test();
+#include "tests.h"
 
 int main() {
     std::cout << "Enter a record: ";
@@ -9,15 +8,8 @@ int main() {
     std::cin >> record;
     std::cout << '\n' << PolishRecord(record) << '\n';
     std::cout << Calculate(PolishRecord(record)) << '\n';
-    Test();
+    TestResult();
+    TestBrackets();
+    RecordTest();
 }
 
-void Test() {
-    std::string notation = "12^2-(90+23)+10/2";  // result : 36
-    if(Calculate(PolishRecord(notation)) == 36){
-        std::cout << "Test passed\n";
-    }
-    else{
-        std::cerr << "Test failed\n";
-    }
-}

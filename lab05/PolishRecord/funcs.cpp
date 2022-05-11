@@ -1,6 +1,5 @@
 #include "funcs.h"
-#include "stack.h"
-#include <cmath>
+
 
 const int pr_size = 6;
 
@@ -12,6 +11,16 @@ std::pair<char, int> priorities[pr_size] {
         {'+', 3},
         {'-', 3}
 };
+
+bool CheckBrackets(const std::string& notation) {
+    int count = 0;
+    for(int i = 0; i < notation.length(); i++) {
+        if(notation[i] == '(' || notation[i] == ')'){
+            ++count;
+        }
+    }
+    return true ? ((count%2)==0) : false;
+}
 
 int GetPrior(const char& action){
     for(int i = 0; i < pr_size; ++i) {
@@ -38,6 +47,10 @@ bool isOperator(const char& c){
 std::string PolishRecord(std::string& notation) {
     std::string output;
     Stack<char> stack;
+    if(!CheckBrackets(notation)) {
+        std::cerr << "uneven amount of brackets\n";
+        return "uneven amount of brackets";
+    }
     for(int i = 0; i < notation.length(); i++){
         if(isDigit(notation[i])){  // if current char is digit
             while(isDigit(notation[i+1]) && i < notation.length()){  // if number is multi-digit
