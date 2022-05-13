@@ -4,7 +4,7 @@ HashTable<int> table_test;
 
 void TestHash() {
     std::string tester = "kyiv";
-    if(table_test._hash(tester) == 3) { // k=107, y=121. result=(107*26+121)%10 = 3
+    if(table_test._hash(tester) == 0) { // k=107, y=121. result=(107*7+121)%10 = 3
         std::cout<<"TestHash passed✅\n";
     }
     else {
