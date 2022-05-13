@@ -27,9 +27,6 @@ public:
 
     // destructor
     ~MySet() {
-        if (count > 0) {
-            delete[] dynamicArrayOfT;
-        }
     }
 
     //method that adds elements into a Set
@@ -76,7 +73,6 @@ void MySet<T>::Add(T element) {
             }
             delete[] dynamicArrayOfT;
             dynamicArrayOfT = tempArray;
-            tempArray = nullptr;
         }
 
         dynamicArrayOfT[count] = element;
