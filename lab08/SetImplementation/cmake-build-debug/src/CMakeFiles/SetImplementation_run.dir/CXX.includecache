@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/ElementNotFoundException.cpp
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/ElementNotFoundException.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/MySet.h
+NotUniqueElementException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/NotUniqueElementException.h
+ElementNotFoundException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/ElementNotFoundException.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/NotUniqueElementException.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/main.cpp
+iostream
+-
+MySet.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/src/MySet.h
+
