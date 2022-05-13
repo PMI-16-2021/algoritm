@@ -55,7 +55,9 @@ template<typename T>
 HashTable<T>::HashTable(size_t size) : size_(size), table_(new List<TableElem<T>>[size_]) {}
 
 template<typename T>
-HashTable<T>::~HashTable() {}
+HashTable<T>::~HashTable() {
+    delete[] table_;
+}
 
 template<typename T>
 size_t HashTable<T>::_hash(string _key) {
