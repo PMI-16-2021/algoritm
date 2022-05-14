@@ -1,18 +1,20 @@
 #pragma once
-#include <memory>
+#include <iostream>
 
+// matrix node struct
 template<typename T> 
 struct MatrixNode
 {
-	T val;
-	size_t row;
-	size_t col;
-	MatrixNode* up;
-	MatrixNode* left;
+	T val;                           // holds value
+	size_t row;                      // number of row it represents
+	size_t col;                      // number of col it represents
+	MatrixNode* up;                  // up-pointer (for next in cols)
+	MatrixNode* left;                // left pointer (for next in rows)
 	MatrixNode(T val = T(), size_t row = 0, size_t col = 0, MatrixNode* _up = nullptr, MatrixNode* _left = nullptr);
-	const T& operator[](int ind) const;
+	const T operator[](int ind) const; // operator go get value
 };
 
+// constructor for MatrixNode
 template<typename T>
 MatrixNode<T>::MatrixNode(T _val, size_t _row, size_t _col, MatrixNode* _up, MatrixNode* _left)
 {
@@ -23,21 +25,28 @@ MatrixNode<T>::MatrixNode(T _val, size_t _row, size_t _col, MatrixNode* _up, Mat
 	left  = _left;
 }
 
+// operator[] for matrix
 template<typename T>
-const T& MatrixNode<T>::operator[](int ind) const
+const T MatrixNode<T>::operator[](int ind) const
 {
-	MatrixNode<T>* temp = this->left;
-	while (temp != this && temp->col > ind)
+	if (ind < 0)
 	{
-		temp = temp->left;
+		//throw std::invalid_argument("BAD ACCESS INDEX!\n");
 	}
-	if (temp->col == ind)
+	MatrixNode<T>* temp = this->left;       
+	while (temp != this && temp->col > ind) // while not in the begin and col is bigger
 	{
-		return temp->val;
+		temp = temp->left;                  // move
 	}
-	return T();
+	if (temp->col == ind)                   // if MatrixNode with col number exists 
+	{
+		return temp->val;                   // return its val
+	}
+	return T();                             // else return T();
 }
 
+// struct for 
+// significant elements funct
 template<typename T>
 struct RawElem
 {
