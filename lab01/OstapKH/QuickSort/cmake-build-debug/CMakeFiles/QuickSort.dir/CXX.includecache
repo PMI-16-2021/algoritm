@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest.h
+cstddef
+-
+limits
+-
+memory
+-
+ostream
+-
+type_traits
+-
+vector
+-
+gtest/gtest-assertion-result.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-assertion-result.h
+gtest/gtest-death-test.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-death-test.h
+gtest/gtest-matchers.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-matchers.h
+gtest/gtest-message.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-message.h
+gtest/gtest-param-test.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-param-test.h
+gtest/gtest-printers.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-printers.h
+gtest/gtest-test-part.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-test-part.h
+gtest/gtest-typed-test.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest-typed-test.h
+gtest/gtest_pred_impl.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest_pred_impl.h
+gtest/gtest_prod.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/gtest_prod.h
+gtest/internal/gtest-internal.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/internal/gtest-internal.h
+gtest/internal/gtest-string.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest/internal/gtest-string.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/src/QuickSorting.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/test/main.cpp
+iostream
+-
+../src/QuickSorting.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/src/QuickSorting.h
+../lib/googletest/googletest/include/gtest/gtest.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/lib/googletest/googletest/include/gtest/gtest.h
+

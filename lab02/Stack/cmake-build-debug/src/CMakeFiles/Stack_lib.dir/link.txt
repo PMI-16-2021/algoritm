@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libStack_lib.a CMakeFiles/Stack_lib.dir/SetOfStacks.cpp.o CMakeFiles/Stack_lib.dir/Stack.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libStack_lib.a

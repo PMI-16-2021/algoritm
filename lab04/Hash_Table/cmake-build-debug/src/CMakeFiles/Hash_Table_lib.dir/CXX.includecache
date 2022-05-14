@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/HashTable.cpp
+HashTable.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/HashTable.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/HashTable.h
+LinkedList.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/LinkedList.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/LinkedList.cpp
+LinkedList.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/LinkedList.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Hash_Table/src/LinkedList.h
+iostream
+-
+string
+-
+
