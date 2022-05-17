@@ -13,11 +13,11 @@ SetOfStacks::~SetOfStacks() {};
 
 void SetOfStacks::push(int a) {
 	if (count < size) {
-		arr.back()->push(a);  
+		arr.back()->push(a);
 		++count;
 	}
 	else {
-		arr.push_back(new Stack()); 
+		arr.push_back(new Stack());
 		arr.back()->push(a);
 		count = 1;
 	}
@@ -25,7 +25,7 @@ void SetOfStacks::push(int a) {
 
 void SetOfStacks::pop() {
 	if (count > 1) {
-		arr.back()->pop(); 
+		arr.back()->pop();
 		--count;
 	}
 	else if (count = 1) {
@@ -47,6 +47,5 @@ void SetOfStacks::popAt(int pos) {
 void SetOfStacks::printSetOfStacks() {
 	for (int i = 0; i < arr.size(); ++i) {
 		arr[i]->printStack();
-		std::cout << "\n";
 	}
 }

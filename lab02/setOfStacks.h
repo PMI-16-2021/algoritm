@@ -1,5 +1,5 @@
 #pragma once
-#include "Stack.h"
+#include "stack.h"
 #include <vector>
 
 class SetOfStacks {

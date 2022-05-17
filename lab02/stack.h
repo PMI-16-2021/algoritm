@@ -1,25 +1,26 @@
 #pragma once
 #include <iostream>
-
-#define SIZE 5//preprocessor - changes one in another
-
 using namespace std;
+struct Node {
+    int value;
+    Node* next;
+    Node(int NodeValue, Node* NodeNext);
+};
 
 class Stack {
 private:
-    int stackArray[SIZE] {};
-    int top = -1;
+    Node* top;
 public:
     Stack();
+    Stack(int value);
     ~Stack();
 
     bool isEmpty();
-    bool isFull();
     int size();
     int showTop();
     void push(int elem);
-    void emplace(int pos, int elem);
-    void swap(int pos1, int pos2);
+    void emplace(int& elem);
+    void swap(Stack& stack);
     void pop();
     void printStack();
 };

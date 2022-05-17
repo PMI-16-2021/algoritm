@@ -18,73 +18,56 @@ namespace UnitTest1
 			Assert::IsFalse(S.isEmpty());
 		}
 
-		TEST_METHOD(TestIsFullMethod)
-		{
-			Stack S;
-			Assert::IsFalse(S.isFull());
-			S.push(2);
-			S.push(4);
-			S.push(3);
-			S.push(1);
-			S.push(8);
-			Assert::IsTrue(S.isFull());
-		}
-
 		TEST_METHOD(TestSizeMethod) {
 			Stack S;
-			Assert::AreEqual(S.size(), 0);
+			Assert::AreEqual(0, S.size());
 			S.push(7);
 			S.push(3);
-			Assert::AreEqual(S.size(), 2);
+			Assert::AreEqual(2, S.size());
 			S.pop();
-			Assert::AreEqual(S.size(), 1);
+			Assert::AreEqual(1, S.size());
 		}
 
 		TEST_METHOD(TestShowTopMethod) {
 			Stack S;
 			S.push(4);
-			Assert::AreEqual(S.showTop(), 4);
+			Assert::AreEqual(4, S.showTop());
 			S.push(9);
 			S.push(1);
-			Assert::AreEqual(S.showTop(), 1);
+			Assert::AreEqual(1, S.showTop());
 			S.pop();
-			Assert::AreEqual(S.showTop(), 9);
+			Assert::AreEqual(9, S.showTop());
 		}
 
 		TEST_METHOD(TestPushMethod) {
 			Stack S;
 			S.push(4);
-			Assert::AreEqual(S.showTop(), 4);
+			Assert::AreEqual(4, S.showTop());
 			S.push(1);
 			S.push(7);
-			Assert::AreEqual(S.showTop(), 7);
+			Assert::AreEqual(7, S.showTop());
 			S.pop();
-			Assert::AreEqual(S.showTop(), 1);
+			Assert::AreEqual(1, S.showTop());
 		}
 
 		TEST_METHOD(TestEmplaceMethod) {
 			Stack S;
-			S.push(4);
-			S.push(3);
-			S.push(1);
-			S.push(8);
-			S.emplace(3, 5);
-			Assert::AreEqual(S.showTop(), 5);
-			S.emplace(2, 14);
-			S.pop();
-			Assert::AreEqual(S.showTop(), 14);
+			int a = 14;
+			S.emplace(a);
+			Assert::AreEqual(14, S.showTop());
+			int b = 16;
+			S.emplace(b);
+			Assert::AreEqual(16, S.showTop());
 		}
 
 		TEST_METHOD(TestSwapMethod) {
-			Stack S;
-			S.push(4);
-			S.push(3);
-			S.push(1);
-			S.push(8);
-			S.swap(2, 3);
-			Assert::AreEqual(S.showTop(), 1);
-			S.pop();
-			Assert::AreEqual(S.showTop(), 8);
+			Stack S1;
+			S1.push(4);
+			Stack S2;
+			S2.push(13);
+			S1.swap(S2);
+			Assert::AreEqual(13, S1.showTop());
+			Assert::AreEqual(4, S2.showTop());
 		}
 
 		TEST_METHOD(TestPopMethod) {
@@ -95,7 +78,7 @@ namespace UnitTest1
 			S.push(7);
 			S.push(9);
 			S.pop();
-			Assert::AreEqual(S.showTop(), 7);
+			Assert::AreEqual(7, S.showTop());
 		}
 	};
 }

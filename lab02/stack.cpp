@@ -1,99 +1,96 @@
 #include "stack.h"
 
-Stack::Stack() {}
+Node::Node(int NodeValue, Node* NodeNext) : value(NodeValue), next(NodeNext) {}
 
-Stack::~Stack() {}
+Stack::Stack() : top(nullptr) {}
 
-bool Stack::isEmpty() {
-    if (top == -1) {
-        return true;
-    }
-    else {
-        return false;
-    }
+Stack::Stack(int value) {
+    top = new Node(value, nullptr);
 }
 
-bool Stack::isFull() {
-    if (top == SIZE - 1) {
-        return true;
+Stack::~Stack() {
+    Node* temp_top = top;
+    Node* temp;
+    while (temp_top != nullptr) {
+        temp = temp_top;
+        temp_top = temp_top->next;
+        delete temp;
     }
-    else {
-        return false;
-    }
+    top = nullptr;
+}
+
+bool Stack::isEmpty() {
+    return top == nullptr;
 }
 
 int Stack::size() {
-    return top + 1;
+    if (isEmpty()) {
+        return 0;
+    }
+    else {
+        Node* temp = top;
+        int counter = 0;
+        while (temp != nullptr) {
+            ++counter;
+            temp = temp->next;
+        }
+        delete temp;
+        return counter;
+    }
 }
 
 int Stack::showTop() {
     if (isEmpty()) {
-        cout << "Stack is empty\n";
+        throw "Stack is empty.";
     }
-    return stackArray[top];
+    else {
+        return top->value;
+    }
 }
 
 void Stack::push(int elem)
 {
-    if (isFull())
-    {
-        cout << "Stack is full\n";
-    }
-    else {
-        ++top;
-        stackArray[top] = elem;
-    }
+    Node* local = new Node(elem, top);
+    top = local;
 }
 
-void Stack::emplace(int pos, int elem)
-{
-    if (isFull())
-    {
-        cout << "Stack is full\n";
-    }
-    else if (pos < 0 || pos > top) {
-        cout << "Positions exist only between 0 and " << top << '\n';
-    }
-    else {
-        stackArray[pos] = elem;
-    }
+void Stack::emplace(int& elem) {
+    Node* local = new Node(elem, top);
+    top = local;
 }
 
-void Stack::swap(int pos1, int pos2) {
-    if (isEmpty()) {
-        cout << "Stack is empty\n";
-    }
-    else if (pos1 > top || pos2 > top || pos1 < 0 || pos2 < 0) {
-        cout << "Positions exist only between 0 and " << top << '\n';
-    }
-    else {
-        int temp;
-        temp = stackArray[pos1];
-        stackArray[pos1] = stackArray[pos2];
-        stackArray[pos2] = temp;
-    }
+void Stack::swap(Stack& stack) {
+    Node* temp = top;
+    top = stack.top;
+    stack.top = temp;
 }
 
 void Stack::pop()
 {
     if (isEmpty()) {
-        cout << "Stack is empty";
+        throw "Stack is empty";
     }
     else {
-        --top;
+        Node* temp;
+        int elem;
+        elem = top->value;
+        temp = top;
+        top = top->next;
+        delete temp;
     }
 }
 
-void Stack::printStack()
-{
+void Stack::printStack() {
     if (isEmpty()) {
-        return;
+        std::cout << "Stack is empty";
     }
     else {
-        cout << "Stack: ";
-        for (int i = 0; i <= top; ++i) {
-            cout << stackArray[i] << ' ';
+        Node* temp = top;
+        std::cout << "Stack: ";
+        while (temp != nullptr) {
+            std::cout << temp->value << " ";
+            temp = temp->next;
         }
-        cout << '\n';
+        std::cout << "\n\n";
     }
 }
