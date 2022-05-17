@@ -6,31 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.cpp
+TESTS.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.h
+
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.h
 functions.h
-/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/functions.h
 iostream
 -
 cassert
-/Users/sofiademchuk/Desktop/CLionProjects/p/cassert
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cassert
 string
-/Users/sofiademchuk/Desktop/CLionProjects/p/string
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/string
 
-/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/func.cpp
+functions.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/functions.h
+
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/functions.h
 iostream
 -
 cmath
-/Users/sofiademchuk/Desktop/CLionProjects/p/cmath
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmath
 stack.h
-/Users/sofiademchuk/Desktop/CLionProjects/p/stack.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/stack.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/main.cpp
+iostream
+-
 functions.h
-/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/functions.h
+string
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/string
 TESTS.h
-/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/p/stack.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/stack.h
 iostream
 -
 

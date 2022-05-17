@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sofiademchuk/Desktop/CLionProjects/p
+CMAKE_SOURCE_DIR = /Users/sofiademchuk/Documents/GitHub/algoritm/lab05
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/p.dir/depend.make
@@ -68,42 +68,42 @@ include CMakeFiles/p.dir/flags.make
 
 CMakeFiles/p.dir/main.cpp.o: CMakeFiles/p.dir/flags.make
 CMakeFiles/p.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/p.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/p.dir/main.cpp.o -c /Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/p.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/p.dir/main.cpp.o -c /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/main.cpp
 
 CMakeFiles/p.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/p.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp > CMakeFiles/p.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/main.cpp > CMakeFiles/p.dir/main.cpp.i
 
 CMakeFiles/p.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/p.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp -o CMakeFiles/p.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/main.cpp -o CMakeFiles/p.dir/main.cpp.s
 
 CMakeFiles/p.dir/func.cpp.o: CMakeFiles/p.dir/flags.make
 CMakeFiles/p.dir/func.cpp.o: ../func.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/p.dir/func.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/p.dir/func.cpp.o -c /Users/sofiademchuk/Desktop/CLionProjects/p/func.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/p.dir/func.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/p.dir/func.cpp.o -c /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/func.cpp
 
 CMakeFiles/p.dir/func.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/p.dir/func.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sofiademchuk/Desktop/CLionProjects/p/func.cpp > CMakeFiles/p.dir/func.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/func.cpp > CMakeFiles/p.dir/func.cpp.i
 
 CMakeFiles/p.dir/func.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/p.dir/func.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sofiademchuk/Desktop/CLionProjects/p/func.cpp -o CMakeFiles/p.dir/func.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/func.cpp -o CMakeFiles/p.dir/func.cpp.s
 
 CMakeFiles/p.dir/TESTS.cpp.o: CMakeFiles/p.dir/flags.make
 CMakeFiles/p.dir/TESTS.cpp.o: ../TESTS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/p.dir/TESTS.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/p.dir/TESTS.cpp.o -c /Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/p.dir/TESTS.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/p.dir/TESTS.cpp.o -c /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.cpp
 
 CMakeFiles/p.dir/TESTS.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/p.dir/TESTS.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.cpp > CMakeFiles/p.dir/TESTS.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.cpp > CMakeFiles/p.dir/TESTS.cpp.i
 
 CMakeFiles/p.dir/TESTS.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/p.dir/TESTS.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.cpp -o CMakeFiles/p.dir/TESTS.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.cpp -o CMakeFiles/p.dir/TESTS.cpp.s
 
 # Object files for target p
 p_OBJECTS = \
@@ -119,7 +119,7 @@ p : CMakeFiles/p.dir/func.cpp.o
 p : CMakeFiles/p.dir/TESTS.cpp.o
 p : CMakeFiles/p.dir/build.make
 p : CMakeFiles/p.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable p"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable p"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -131,6 +131,6 @@ CMakeFiles/p.dir/clean:
 .PHONY : CMakeFiles/p.dir/clean
 
 CMakeFiles/p.dir/depend:
-	cd /Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sofiademchuk/Desktop/CLionProjects/p /Users/sofiademchuk/Desktop/CLionProjects/p /Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug /Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug /Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/CMakeFiles/p.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sofiademchuk/Documents/GitHub/algoritm/lab05 /Users/sofiademchuk/Documents/GitHub/algoritm/lab05 /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug /Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/CMakeFiles/p.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/p.dir/depend
 

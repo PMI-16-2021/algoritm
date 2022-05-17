@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug"/>
+				<Option working_dir="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug"/>
+				<Option working_dir="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug"/>
+				<Option working_dir="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="p">
-				<Option output="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/p" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug"/>
+				<Option output="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/p" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +51,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 p"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 p"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="p/fast">
-				<Option output="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/p" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug"/>
+				<Option output="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/p" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,32 +71,32 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 p/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Desktop/CLionProjects/p/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 p/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.cpp">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.cpp">
 			<Option target="p"/>
 		</Unit>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.h">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/TESTS.h">
 			<Option target="p"/>
 		</Unit>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/func.cpp">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/func.cpp">
 			<Option target="p"/>
 		</Unit>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/functions.h">
 			<Option target="p"/>
 		</Unit>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/main.cpp">
 			<Option target="p"/>
 		</Unit>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/stack.h">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/stack.h">
 			<Option target="p"/>
 		</Unit>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/CMakeLists.txt">
+		<Unit filename="/Users/sofiademchuk/Documents/GitHub/algoritm/lab05/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
