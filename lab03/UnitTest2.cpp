@@ -4,9 +4,9 @@
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-namespace UnitTest1
+namespace UnitTest2
 {
-	TEST_CLASS(UnitTest1)
+	TEST_CLASS(UnitTest2)
 	{
 	public:
 		
@@ -29,7 +29,7 @@ namespace UnitTest1
 			PriorityQueue<int> Queue;
 			Queue.enqueue(2, 0);
 			Queue.enqueue(1, 1);
-			Queue.empty();
+			Queue.emptyQueue();
 			Assert::IsTrue(Queue.isEmpty());
 		}
 		TEST_METHOD(TopTest) {
