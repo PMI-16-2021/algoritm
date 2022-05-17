@@ -6,13 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/sofiademchuk/Desktop/CLionProjects/p/Stack.h
+/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.h
+functions.h
+/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h
+iostream
+-
+cassert
+/Users/sofiademchuk/Desktop/CLionProjects/p/cassert
+string
+/Users/sofiademchuk/Desktop/CLionProjects/p/string
+
+/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h
 iostream
 -
 cmath
 /Users/sofiademchuk/Desktop/CLionProjects/p/cmath
+stack.h
+/Users/sofiademchuk/Desktop/CLionProjects/p/stack.h
 
 /Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp
-Stack.h
-/Users/sofiademchuk/Desktop/CLionProjects/p/Stack.h
+functions.h
+/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h
+TESTS.h
+/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.h
+
+/Users/sofiademchuk/Desktop/CLionProjects/p/stack.h
+iostream
+-
 

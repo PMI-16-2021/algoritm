@@ -78,10 +78,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/Stack.h">
+		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.cpp">
+			<Option target="p"/>
+		</Unit>
+		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/TESTS.h">
+			<Option target="p"/>
+		</Unit>
+		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/func.cpp">
+			<Option target="p"/>
+		</Unit>
+		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/functions.h">
 			<Option target="p"/>
 		</Unit>
 		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/main.cpp">
+			<Option target="p"/>
+		</Unit>
+		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/stack.h">
 			<Option target="p"/>
 		</Unit>
 		<Unit filename="/Users/sofiademchuk/Desktop/CLionProjects/p/CMakeLists.txt">

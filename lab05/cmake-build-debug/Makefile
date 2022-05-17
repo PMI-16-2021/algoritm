@@ -129,6 +129,54 @@ p/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/build
 .PHONY : p/fast
 
+TESTS.o: TESTS.cpp.o
+.PHONY : TESTS.o
+
+# target to build an object file
+TESTS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/TESTS.cpp.o
+.PHONY : TESTS.cpp.o
+
+TESTS.i: TESTS.cpp.i
+.PHONY : TESTS.i
+
+# target to preprocess a source file
+TESTS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/TESTS.cpp.i
+.PHONY : TESTS.cpp.i
+
+TESTS.s: TESTS.cpp.s
+.PHONY : TESTS.s
+
+# target to generate assembly for a file
+TESTS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/TESTS.cpp.s
+.PHONY : TESTS.cpp.s
+
+func.o: func.cpp.o
+.PHONY : func.o
+
+# target to build an object file
+func.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/func.cpp.o
+.PHONY : func.cpp.o
+
+func.i: func.cpp.i
+.PHONY : func.i
+
+# target to preprocess a source file
+func.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/func.cpp.i
+.PHONY : func.cpp.i
+
+func.s: func.cpp.s
+.PHONY : func.s
+
+# target to generate assembly for a file
+func.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p.dir/build.make CMakeFiles/p.dir/func.cpp.s
+.PHONY : func.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... p"
+	@echo "... TESTS.o"
+	@echo "... TESTS.i"
+	@echo "... TESTS.s"
+	@echo "... func.o"
+	@echo "... func.i"
+	@echo "... func.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
