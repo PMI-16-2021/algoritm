@@ -1,98 +1,116 @@
-#include "HTable.h"
+#include "htable.h"
 
-Row::Row(string key, string workplace)
+HTable::HTable() : capacity(0), size(10)
 {
-    this->key = key;
-    this->Workplace = workplace;
-
+    table = new Row[size];
 }
 
-bool Row::IsEmpty()
+HTable::HTable(size_t _size): capacity(0), size(_size)
 {
-    return (key == " ") ? true : false;
+    table = new Row[size];
 }
 
-void Row::OutPut()
+HTable::~HTable()
 {
-    cout << key << "\t" << Workplace << endl;
+    delete[] table;
 }
 
-int HashIndex(string key, int hash_size)
+int HTable::hash(string key)
 {
-    int Sum = 0;
+    int sum = 0;
     for (int i = 0; i < key.length(); ++i)
     {
-        Sum += key[i];
+        sum += key[i];
     }
-    return Sum % hash_size;
+    return sum % size;
 }
 
-Hash_Table::Hash_Table(int size)
+void HTable::add(string key, string element)
 {
-    this->capacity=size;
-    Table = new Row[capacity];
-}
-
-Hash_Table::~Hash_Table()
-{
-    delete[] Table;
-}
-
-void Hash_Table::add(Row new_element)
-{
-    int new_index = HashIndex(new_element.key, capacity);
-    if (Table[new_index].IsEmpty()) Table[new_index] = new_element;
-    else
+    if (find(key))
     {
-        for (int i = 0; i < capacity; ++i)
-        {
-            if (Table[i].IsEmpty())
-            {
-                Table[i] = new_element;
-
-                break;
-            }
-        }
+        throw "This key is already used";
     }
-    ++count;
+    if (capacity >= size)
+    {
+        cout<<"Your hash table is already full";
+    }
+    int index = hash(key);
+    while (table[index].key != "" && table[index].key != key)
+    {
+        ++index;
+        index %= size;
+    }
+    table[index] = Row(key, element);
+    ++capacity;
 }
 
-bool Hash_Table::find(string key)
+bool HTable::find(string key)
 {
-    int index = HashIndex(key,capacity);
-    while (Table[index].key != "" ) {
-        if (Table[index].key == key) {
+    int index = hash(key);
+    while (table[index].key != "" )
+    {
+        if (table[index].key == key)
+        {
             return true;
         }
         ++index;
-        index %= capacity;
+        index %= size;
     }
 
     return false;
 }
 
-void Hash_Table::pop(string key)
+void HTable::values()
 {
-    int index = find(key);
-    if (!find(key)) cout << "Element is not found!\n";
-    else
+    for (size_t i = 0; i < size; ++i)
     {
-        int hash_index = index;
-        while (Table[hash_index].key != key)
+        if (table[i]. key == "")
         {
-            hash_index = (hash_index + index) % capacity;
+            cout << "№" << i;
+            cout<< " key : ";  cout.width(19);cout << " value : " << '\n';
         }
-        Table[hash_index].key = Table[hash_index].Workplace = "";
-    --count;
+        else
+        {
+            cout << "№" << i ;
+            cout<< " key : " ;cout << table[i].key ;cout.width(3);cout<< "  value :  " << table[i].value << '\n';
+        }
     }
 }
 
-void Hash_Table::values()
+bool HTable::isEmpty()
 {
-    for (int i = 0; i <capacity; ++i)
+    return capacity == 0;
+}
+
+int HTable::getSize()
+{
+    return capacity;
+}
+
+void HTable::pop(string key)
+{
+    int index = hash(key);
+    List<Row> temp;
+    while (table[index].key != "")
     {
-        cout << " Worker" << i << " : \t";
-        Table[i].OutPut();
+        if (table[index].key == key)
+        {
+            table[index].key = "";
+            --capacity;
+            ++index;
+            index %= size;
+        }
+        temp.addBack(table[index]);
+        table[index].key = "";
+        --capacity;
+        ++index;
+        index %= size;
+    }
+    while (!temp.isEmpty())
+    {
+        add(temp.top()->value.key, temp.top()->value.value);
+        temp.delFirst();
     }
 }
 

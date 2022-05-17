@@ -1,35 +1,32 @@
 #pragma once
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
+#include "list.h"
 using namespace std;
-//struct row = node
-struct Row
-{
-    string key; // key
-    string Workplace; // value
-    Row() : key(" "), Workplace(" ") {} // default constructor
-    Row(string key, string workplace); // constructor with parameters
-    bool IsEmpty();// method check if row is Empty
-    void OutPut();//method print rows
+//row on string
+struct Row {
+    string key;
+    string  value;
+    Row() : key(""), value() {}
+    Row(string _key, string _value) : key(_key), value(_value) {}
 };
 
-int HashIndex(string key, int hash_size); // hashing func
-class Hash_Table
-{
+class HTable {
 private:
-    int capacity;// max size
-    int count; // used side
-    const int size = 10;
-    Row* Table; // pointer
+    Row* table;
+    size_t capacity; // count
+    size_t size; // max size
+    int hash(string key);
 public:
-    Hash_Table(int size); // constructor
-    ~Hash_Table();//destructor
-    int getSize() { return count; } // get used size
-    int getCapacity(){return capacity;}//get max size
-    void add(Row new_element); // add a row
-    bool find(string key); // find a row by key
-    void pop(string key);// pop a row by key
-    void values(); // print table
+    HTable();
+    HTable(size_t _size);
+    ~HTable();
+    void add(string key, string element);
+    bool find(string key);
+    void pop(string key);
+    void values();//print
+    bool isEmpty();
+    int getSize();
 
 };
 

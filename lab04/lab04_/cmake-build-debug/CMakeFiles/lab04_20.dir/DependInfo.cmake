@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sofiademchuk/Desktop/CLionProjects/lab04_/HTable.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles/lab04_.dir/HTable.cpp.o"
-  "/Users/sofiademchuk/Desktop/CLionProjects/lab04_/Tests.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles/lab04_.dir/Tests.cpp.o"
-  "/Users/sofiademchuk/Desktop/CLionProjects/lab04_/main.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles/lab04_.dir/main.cpp.o"
+  "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/Tests.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles/lab04_20.dir/Tests.cpp.o"
+  "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/htable.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles/lab04_20.dir/htable.cpp.o"
+  "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/main.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles/lab04_20.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

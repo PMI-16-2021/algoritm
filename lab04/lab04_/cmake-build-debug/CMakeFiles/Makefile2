@@ -54,16 +54,16 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04_
+CMAKE_SOURCE_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04.20
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lab04_.dir/all
+all: CMakeFiles/lab04_20.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lab04_.dir/clean
+clean: CMakeFiles/lab04_20.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lab04_.dir
+# Target rules for target CMakeFiles/lab04_20.dir
 
 # All Build rule for target.
-CMakeFiles/lab04_.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target lab04_"
-.PHONY : CMakeFiles/lab04_.dir/all
+CMakeFiles/lab04_20.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target lab04_20"
+.PHONY : CMakeFiles/lab04_20.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lab04_.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab04_.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/lab04_.dir/rule
+CMakeFiles/lab04_20.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab04_20.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/lab04_20.dir/rule
 
 # Convenience name for target.
-lab04_: CMakeFiles/lab04_.dir/rule
-.PHONY : lab04_
+lab04_20: CMakeFiles/lab04_20.dir/rule
+.PHONY : lab04_20
 
 # clean rule for target.
-CMakeFiles/lab04_.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/clean
-.PHONY : CMakeFiles/lab04_.dir/clean
+CMakeFiles/lab04_20.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/clean
+.PHONY : CMakeFiles/lab04_20.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

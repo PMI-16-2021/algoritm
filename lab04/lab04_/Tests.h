@@ -2,9 +2,8 @@
 #include <iostream>
 using namespace std;
 #include "cassert"
-#include "HTable.h"
+#include "htable.h"
 
-bool TestContructor();
 bool TestTableConstructor();
 bool TestAdd();
 bool TestPop();
@@ -15,5 +14,5 @@ void Test1();
 void Test2();
 void Test3();
 void Test4();
-void Test5();
+
 

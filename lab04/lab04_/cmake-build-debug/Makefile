@@ -57,10 +57,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04_
+CMAKE_SOURCE_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04.20
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04_/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab04_
+# Target rules for targets named lab04_20
 
 # Build rule for target.
-lab04_: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab04_
-.PHONY : lab04_
+lab04_20: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab04_20
+.PHONY : lab04_20
 
 # fast build rule for target.
-lab04_/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/build
-.PHONY : lab04_/fast
-
-HTable.o: HTable.cpp.o
-.PHONY : HTable.o
-
-# target to build an object file
-HTable.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/HTable.cpp.o
-.PHONY : HTable.cpp.o
-
-HTable.i: HTable.cpp.i
-.PHONY : HTable.i
-
-# target to preprocess a source file
-HTable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/HTable.cpp.i
-.PHONY : HTable.cpp.i
-
-HTable.s: HTable.cpp.s
-.PHONY : HTable.s
-
-# target to generate assembly for a file
-HTable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/HTable.cpp.s
-.PHONY : HTable.cpp.s
+lab04_20/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/build
+.PHONY : lab04_20/fast
 
 Tests.o: Tests.cpp.o
 .PHONY : Tests.o
 
 # target to build an object file
 Tests.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/Tests.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/Tests.cpp.o
 .PHONY : Tests.cpp.o
 
 Tests.i: Tests.cpp.i
@@ -166,7 +142,7 @@ Tests.i: Tests.cpp.i
 
 # target to preprocess a source file
 Tests.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/Tests.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/Tests.cpp.i
 .PHONY : Tests.cpp.i
 
 Tests.s: Tests.cpp.s
@@ -174,15 +150,39 @@ Tests.s: Tests.cpp.s
 
 # target to generate assembly for a file
 Tests.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/Tests.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/Tests.cpp.s
 .PHONY : Tests.cpp.s
+
+htable.o: htable.cpp.o
+.PHONY : htable.o
+
+# target to build an object file
+htable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/htable.cpp.o
+.PHONY : htable.cpp.o
+
+htable.i: htable.cpp.i
+.PHONY : htable.i
+
+# target to preprocess a source file
+htable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/htable.cpp.i
+.PHONY : htable.cpp.i
+
+htable.s: htable.cpp.s
+.PHONY : htable.s
+
+# target to generate assembly for a file
+htable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/htable.cpp.s
+.PHONY : htable.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -190,7 +190,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -198,7 +198,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_.dir/build.make CMakeFiles/lab04_.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab04_20.dir/build.make CMakeFiles/lab04_20.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -209,13 +209,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lab04_"
-	@echo "... HTable.o"
-	@echo "... HTable.i"
-	@echo "... HTable.s"
+	@echo "... lab04_20"
 	@echo "... Tests.o"
 	@echo "... Tests.i"
 	@echo "... Tests.s"
+	@echo "... htable.o"
+	@echo "... htable.i"
+	@echo "... htable.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
