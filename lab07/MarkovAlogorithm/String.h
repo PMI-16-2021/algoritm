@@ -77,8 +77,10 @@ struct Rule
 	}
 };
 
+//Markov algorithm 
 String markovAlg(std::vector<Rule>&, String data);
 
+//exception class
 class BadRule
 {
 private:
@@ -88,6 +90,6 @@ public:
 	BadRule(const String& _mess): mess(_mess) {}
 	void report() const
 	{
-		std::cerr << "Loping detected during Markov algorithm on String " << mess << '\n';
+		std::cerr << "Looping detected during Markov algorithm on String " << mess << '\n';
 	}
 };
