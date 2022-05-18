@@ -6,37 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/Tests.cpp
-Tests.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/Tests.h
-
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/Tests.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/Tests.h
 iostream
 -
 cassert
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cassert
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/cassert
 htable.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/htable.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/htable.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/htable.cpp
-htable.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/htable.h
-
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/htable.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/htable.h
 iostream
 -
 string
 -
 list.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/list.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/list.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/list.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/list.h
 iostream
 -
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/main.cpp
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/main.cpp
 htable.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/htable.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/htable.h
 Tests.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/Tests.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/Tests.h
 

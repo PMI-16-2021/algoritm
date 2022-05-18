@@ -68,12 +68,12 @@ void HTable::values()
         if (table[i]. key == "")
         {
             cout << "№" << i;
-            cout<< " key : ";  cout.width(19);cout << " value : " << '\n';
+            cout<< " key : ";  cout.width(20);cout << " value : " << '\n';
         }
         else
         {
             cout << "№" << i ;
-            cout<< " key : " ;cout << table[i].key ;cout.width(3);cout<< "  value :  " << table[i].value << '\n';
+            cout<< " key : " ;cout << table[i].key ;cout.width(15);cout<< "  value :  " << table[i].value << '\n';
         }
     }
 }
@@ -92,9 +92,9 @@ void HTable::pop(string key)
 {
     int index = hash(key);
     List<Row> temp;
-    while (table[index].key != "")
+    while (table[index].key != "") //check
     {
-        if (table[index].key == key)
+        if (table[index].key == key) // when we find
         {
             table[index].key = "";
             --capacity;

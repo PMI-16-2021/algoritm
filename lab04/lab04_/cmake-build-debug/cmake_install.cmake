@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sofiademchuk/Desktop/CLionProjects/lab04.20
+# Install script for directory: /Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/sofiademchuk/Desktop/CLionProjects/lab04.20/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
