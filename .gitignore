@@ -670,3 +670,18 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml,
 
+*.filters
+*.sln
+*.vcxproj
+lab07/MarkovTests/pch.h
+lab02/dmitru4ok/README.md
+lab03/TESTS/pch.cpp
+lab04/dmitru4ok/TableTesting/pch.cpp
+lab04/dmitru4ok/TableTesting/pch.h
+lab06/SparceMatrixTest/pch.cpp
+lab06/SparceMatrixTest/pch.h
+lab07/MarkovTests/pch.cpp
+lab08/MySet/main.cpp
+lab08/MySet/MySet.h
+lab08/MySet/Tree.h
+lab08/MySet/TreeNode.h
