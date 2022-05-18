@@ -58,5 +58,13 @@ namespace UnitTest1
 			H.pop("frank");
 			Assert::AreEqual(1, H.elemCount());
 		}
+
+		TEST_METHOD(FindTest) {
+			HashTable H;
+			H.add(1.0, "spike");
+			H.add(2.7, "bull");
+			Assert::IsFalse(H.checkKey("frank"));
+			Assert::IsTrue(H.checkKey("spike"));
+		}
 	};
 }

@@ -38,9 +38,29 @@ public:
     }
     
     void add(double val, std::string k) {
+        if (checkKey(k)) {
+            throw "This word is already used";
+        }
         int index = _hash(k);
+        while (table[index].key != "" && table[index].key != k) {
+            ++index;
+            index %= SIZE;
+        }
         table[index].value = val;
         table[index].key = k;
+    }
+
+    bool checkKey(std::string k) {
+        int index = _hash(k);
+        while (table[index].key != "") {
+            if (table[index].key == k) {
+                return true;
+            }
+            ++index;
+            index %= SIZE;
+        }
+
+        return false;
     }
 
     void pop(std::string k) {
@@ -51,7 +71,14 @@ public:
 
     double get(std::string k) {
         int index = _hash(k);
-        return table[index].value;
+        while (table[index].key != "") {
+            if (table[index].key == k) {
+                return table[index].value;
+            }
+            ++index;
+            index %= SIZE;
+        }
+        std::cout << "Go nahuy takoho nema\n";
     }
 
     int elemCount() {
