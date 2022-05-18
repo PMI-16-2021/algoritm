@@ -17,6 +17,7 @@ public:
     MySet(size_t _size);
     MySet(const MySet<T>& other);
     ~MySet();
+    size_t GetUsed() const {return used_;}
     void Add(T _elem);  // check if already exists
     void Remove(T _elem);  // check if exists
     size_t Len() const;
@@ -26,11 +27,7 @@ public:
     MySet<T> Difference(const MySet<T>& other) const;
     MySet<T> SymmetricDifference(const MySet<T>& other) const;
     void Print() const;
-
-    class Repetition{
-    public:
-        Repetition(const T& _elem){std::cerr << "Element " << _elem << " already exists";}
-    };
+    T* GetSet() {return set_;} // for unit tests
 };
 
 template<typename T>
@@ -61,7 +58,10 @@ MySet<T>::~MySet() {
 template<typename T>
 void MySet<T>::Add(T _elem) {
     if(IsIn(_elem)) {
-        throw Repetition(_elem);
+        return;
+    }
+    if(IsFull()) {
+        Resize(10);
     }
     set_[used_] = _elem;
     ++used_;
@@ -71,7 +71,7 @@ template<typename T>
 void MySet<T>::Remove(T _elem) {  // if elem exists - remove, if not - do nothing
     if(IsIn(_elem)) {
         size_t index = FindElem(_elem);
-        delete set_[index];
+        set_[index] = T(0);
         Shift(index);
         --used_;
     }
@@ -79,7 +79,7 @@ void MySet<T>::Remove(T _elem) {  // if elem exists - remove, if not - do nothin
 
 template<typename T>
 size_t MySet<T>::Len() const {
-    return size_;
+    return used_;
 }
 
 template<typename T>
@@ -107,16 +107,10 @@ MySet<T> MySet<T>::Union(const MySet<T> &other) const {
 
 template<typename T>
 MySet<T> MySet<T>::Intersection(const MySet<T> &other) const {
-    std::sort(set_);
-    std::sort(other.set_);
-    size_t size = other.used_+used_;
-    T arr[size];
-    std::copy(set_, set_+used_, arr);
-    std::copy(other.set_, other.set_+other.used_, arr+used_);
     MySet<T> ret_set;
-    for(int i = 0, j = used_; i < used_ && j < size; i++, j++){  // after sorting and merging we can check if there is similar elements
-        if(arr[i] == arr[j]){
-            ret_set.Add(arr[i]);
+    for(int i = 0; i < used_; i++){
+        if(other.IsIn(set_[i])){
+            ret_set.Add(set_[i]);
         }
     }
     return ret_set;
@@ -124,27 +118,9 @@ MySet<T> MySet<T>::Intersection(const MySet<T> &other) const {
 
 template<typename T>
 MySet<T> MySet<T>::Difference(const MySet<T> &other) const {
-    std::map<int, int> map;
-    // check differences from other to this
-    for(int i = 0; i < used_; i++){
-        map.emplace(set_[i], set_[i]);
-    }
     MySet<T> ret_set;
-    std::map<int, int>::iterator it;
-    for(int i = 0; i < other.used_; i++){
-        it = map.find(other.set_[i]);
-        if(it->second == 0) {
-            ret_set.Add(other.set_[i]);
-        }
-    }
-    map.clear();
-    //check differences from this to other
-    for(int i = 0; i < other.used_; i++){
-        map.emplace(other.set_[i], other.set_[i]);
-    }
-    for(int i = 0; i < used_; i++){
-        it = map.find(set_[i]);
-        if(it->second == 0) {
+    for(int i = 0; i < used_; i++) {
+        if(!(other.IsIn(set_[i]))) {
             ret_set.Add(set_[i]);
         }
     }
@@ -153,27 +129,26 @@ MySet<T> MySet<T>::Difference(const MySet<T> &other) const {
 
 template<typename T>
 MySet<T> MySet<T>::SymmetricDifference(const MySet<T> &other) const {
-    /*
-     1 6 5 3 8
-     2 3 6 8 0
-     1 5 2 0
-     */
-    MySet<T> ret_set;
+    // union - intersection
     MySet<T> intersection = Intersection(other);
-
-    return ret_set;
+    MySet<T> union_ = Union(other);
+    for(int i = 0; i < intersection.GetUsed(); i++) {
+        union_.Remove(intersection.set_[i]);
+    }
+    return union_;
 }
 
 template<typename T>
 void MySet<T>::Print() const {
     for(int i = 0; i < used_; i++) {
-        std::cout << set_[i] << '/t';
+        std::cout << set_[i] << '\t';
     }
 }
 
 template<typename T>
 void MySet<T>::Resize(size_t size) {
-    T* temp = new T[size];
+    size_ +=  size;
+    T* temp = new T[size_];
     for(int i = 0; i < size_; i++){
         temp[i] = set_[i];
     }
