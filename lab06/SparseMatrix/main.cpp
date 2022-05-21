@@ -1,3 +1,10 @@
-//
-// Created by Богдан Воробієнко on 17.05.2022.
-//
+#include "tests.h"
+
+int main() {
+    SetTest();
+    GetTest();
+    AddTest();
+    SubstTest();
+    MultTest();
+    return 0;
+}

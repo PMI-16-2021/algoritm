@@ -1,50 +1,24 @@
-#pragma once
 #include <iostream>
+#include <vector>
+using std::vector;
 
-template<typename T>
-struct MatrixNode {
-    T value;
-    size_t column;
-    size_t row;
-    MatrixNode* left = nullptr;
-    MatrixNode* up = nullptr;
-    MatrixNode(const T& _value, size_t _column, size_t _row, MatrixNode<T>* _left, MatrixNode<T>* _up);
-    ~MatrixNode();
-};
-
-template<typename T>
-MatrixNode<T>::MatrixNode(const T &_value, size_t _column, size_t _row, MatrixNode<T>* _left, MatrixNode<T>* _up) {
-    value = _value;
-    column = _column;
-    row = _row;
-    left = _left;
-    up = _up;
-}
-
-template<typename T>
-MatrixNode<T>::~MatrixNode() {
-    left = nullptr;
-    up = nullptr;
-    value = T(0);
-}
-
-template<typename T>
 class SparseMatrix {
 private:
-        MatrixNode<T>* columns_;
-        MatrixNode<T>* rows_;
-        size_t num_of_els;  // amount of elements
-        size_t num_of_rows;  // size of rows_ arr
-        size_t num_of_cols;  // size of columns_ arr
-
+    vector<int> values_;
+    vector<int> rows_;
+    vector<int> columns_;
+    size_t num_of_rows_;
+    size_t num_of_cols_;
+    bool IsAt(int row, int col) const; // checks wether at pos is any element
 public:
-        SparseMatrix();
-        SparseMatrix(size_t _rows, size_t _cols);
-        SparseMatrix(const SparseMatrix<T>& another);
-        ~SparseMatrix();
-        T Get(int _row, int _col) const;
-        void Set(int _row, int _col, T _elem);
-        std::pair<T, int>* SignificantElements(const T** matrix) const;  // forms sparse matrix
-        SparseMatrix<T> Addition(SparseMatrix<T>& another) const;
-        SparseMatrix<T> Subtraction(SparseMatrix<T>& another) const;
+    SparseMatrix(size_t rows, size_t columns);
+    SparseMatrix(const SparseMatrix& other);
+    ~SparseMatrix();
+    int Get(int row, int col) const;   // done
+    void Set(int row, int col, int value);  // done
+    void SignificantElements(int** matrix); // done
+    SparseMatrix Addition(const SparseMatrix& other);
+    SparseMatrix Substraction(const SparseMatrix& other);
+    SparseMatrix Multiplication(const SparseMatrix& other);
+    void Print() const; // done
 };
