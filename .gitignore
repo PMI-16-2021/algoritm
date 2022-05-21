@@ -673,3 +673,9 @@ FodyWeavers.xsd
 *.sln
 *.vcxproj
 *.filters
+lab02/dmitru4ok/README.md
+lab03/TESTS/pch.cpp
+lab04/dmitru4ok/TableTesting/pch.cpp
+lab06/SparceMatrixTest/pch.cpp
+lab04/dmitru4ok/TableTesting/pch.h
+lab06/SparceMatrixTest/pch.h
