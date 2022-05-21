@@ -674,3 +674,9 @@ lab01/SortingTest/SortingTest.vcxproj
 *.filters
 *.vcxproj
 *.sln
+lab06/SparceMatrixTest/pch.h
+lab04/dmitru4ok/TableTesting/pch.h
+lab06/SparceMatrixTest/pch.cpp
+lab04/dmitru4ok/TableTesting/pch.cpp
+lab03/TESTS/pch.cpp
+lab02/dmitru4ok/README.md
