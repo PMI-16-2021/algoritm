@@ -670,3 +670,7 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml,
 
+lab01/SortingTest/SortingTest.vcxproj
+*.filters
+*.vcxproj
+*.sln
