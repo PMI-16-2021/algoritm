@@ -32,7 +32,7 @@ private:
 	void print(Node<T>* node, short shift) const;	//prints with a tree-like structure
 	void inorder(Node<T>* node) const;              //left-root-right print
 	void postorder(Node<T>* node) const;			//left-right-root print
-	void preorder(Node<T>* node) const;				//root-left-right print
+	void preorder(Node<T>* node) const;					//root-left-right print
 	
 public:
 	Tree();                  //default
@@ -199,7 +199,7 @@ int Tree<T>::getBalance(Node<T>* node) const
 template<typename T>
 int Tree<T>::height(Node<T>* node) const
 {
-	if (!node)           //if nullpret => -1
+	if (!node)           //if nullptrt => -1
 	{
 		return -1;
 	}
@@ -295,7 +295,7 @@ inline int Tree<T>::height() const
 {
 	if (!root)
 	{
-		return 0;
+		return -1;
 	}
 	return root->height;
 }
