@@ -113,8 +113,9 @@ void Set<T>::addToVect(Node<T>* n, vector<T>& vect) const
 	{
 		return;
 	}
-	addToVect(n->left, vect);   //recursive left call
 	vect.push_back(n->key);     //pushing back to vector
+	addToVect(n->left, vect);   //recursive left call
+	
 	addToVect(n->right, vect);  //recursive right call
 }
 
