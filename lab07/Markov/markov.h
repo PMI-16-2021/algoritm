@@ -2,4 +2,4 @@
 #include "String.h"
 #include <vector>
 
-String MarkovAlgoritm(std::vector<std::pair<String,String>> productions, String string);
+String MarkovAlgorithm(std::vector<std::pair<String,String>>rules, String string);
