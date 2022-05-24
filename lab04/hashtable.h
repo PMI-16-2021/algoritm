@@ -78,7 +78,7 @@ public:
             ++index;
             index %= SIZE;
         }
-        std::cout << "Go nahuy takoho nema\n";
+        std::cout << "Error.\n";
     }
 
     int elemCount() {
