@@ -23,19 +23,45 @@ Element::~Element(){};
 
     void HashTable::add(std::string k, int v) {
         int index = _hash(k);
+        for (int i = index; i < MAX; ++i) {
+            if (dictionary[i].key == k) {
+                throw "This word is already used";
+            }
+            ++i;
+            i %= MAX;
+        }
+        while (dictionary[index].key != "" && dictionary[index].key != k) {
+            ++index;
+            index %= MAX;
+        }
         dictionary[index].key = k;
         dictionary[index].value = v;
     }
 
     int HashTable::get(std::string k) {
         int index = _hash(k);
-        return dictionary[index].value;
+        for (int i = index; i < MAX; ++i) {
+            if (dictionary[i].key == k) {
+                return dictionary[index].value;
+            }
+            ++index;
+            index %= MAX;
+        }
+        cout << "Key is not used.\n";
     }
 
     void HashTable::pop(std::string k) {
         int index = _hash(k);
-        dictionary[index].key = "";
-        dictionary[index].value = 0;
+        for (int i = index; i < MAX; ++i) {
+            if (dictionary[i].key == k) {
+                dictionary[index].key = "";
+                dictionary[index].value = 0;
+                return;
+            }
+            ++index;
+            index %= MAX;
+        }
+        
     }
 
     int HashTable::elemCount() {
