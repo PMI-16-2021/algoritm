@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.cpp
+Test.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.h
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.h
+iostream
+-
+set.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+cassert
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/cassert
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/main.cpp
+iostream
+-
+set.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+Test.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.h
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.cpp
+set.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+iostream
+-
+
