@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Markov.h
+iostream
+-
+vector
+-
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Tests.cpp
+Tests.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Tests.h
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Tests.h
+iostream
+-
+cassert
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/cassert
+Markov.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Markov.h
+
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/main.cpp
+Markov.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Markov.h
+Tests.h
+/Users/sofiademchuk/Desktop/CLionProjects/lab07/Tests.h
+
