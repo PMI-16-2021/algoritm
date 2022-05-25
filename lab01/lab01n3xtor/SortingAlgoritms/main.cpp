@@ -19,7 +19,7 @@ int main()
 	cout << "Quick sorted array:\n";
 	printArray(arr, arrSize);
 
-    ñountingSort(arr, arrSize);
+    countingSort(arr, arrSize);
     cout << "Counting sorted array:\n";
     printArray(arr, arrSize);
 
