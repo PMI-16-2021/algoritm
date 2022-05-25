@@ -670,3 +670,17 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml,
 
+*.vcxproj
+*.filters
+lab01/Lab01/algoritm/
+*.sln
+lab02dmitru4ok/README.md
+lab02/README.md
+*.md
+lab01/dmitru4ok/algoritm/algos.cpp
+lab01/dmitru4ok/algoritm/algos.h
+lab01/dmitru4ok/algoritm/algos.cpp
+lab01/dmitru4ok/algoritm/algos.cpp
+lab01/dmitru4ok/algoritm/algos.h
+lab01/dmitru4ok/algoritm/main.cpp
+lab01/dmitru4ok/SortingTest/SortingTest.cpp
