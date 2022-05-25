@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/lab04_20.dir/main.cpp.o CMakeFiles/lab04_20.dir/htable.cpp.o CMakeFiles/lab04_20.dir/Tests.cpp.o -o lab04_20 

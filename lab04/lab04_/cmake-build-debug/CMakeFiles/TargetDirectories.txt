@@ -1,0 +1,3 @@
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/cmake-build-debug/CMakeFiles/lab04_20.dir

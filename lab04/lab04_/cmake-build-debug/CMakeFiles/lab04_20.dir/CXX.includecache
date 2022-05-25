@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/Tests.h
+iostream
+-
+cassert
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/cassert
+htable.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/htable.h
+
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/htable.h
+iostream
+-
+string
+-
+list.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/list.h
+
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/list.h
+iostream
+-
+
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/main.cpp
+htable.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/htable.h
+Tests.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab04/lab04_/Tests.h
+
