@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/ShellSort/ShellSorting.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/ShellSort/main.cpp
+iostream
+-
+ShellSorting.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/ShellSort/ShellSorting.h
+
