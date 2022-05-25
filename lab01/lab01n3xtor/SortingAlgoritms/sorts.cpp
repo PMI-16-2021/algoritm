@@ -63,7 +63,7 @@ void quickSort(int* arr, size_t const arrSize)
     }
 }
 
-void ñountingSort(int arr[], size_t arrSize)
+void countingSort(int arr[], size_t arrSize)
 {
     int max = INT_MIN, min = INT_MAX;
     for (size_t i = 0; i < arrSize; i++)
