@@ -117,7 +117,7 @@ void quickSortTest()
 int Test3_1()
 {
     int arr[8] = {6,7,15,16,45,45,76,88};
-    ñountingSort(arr, 8);
+    countingSort(arr, 8);
     int arrSorted[8] = { 6,7,15,16,45,45,76,88 };
     for (size_t i = 0; i < 8; ++i)
     {
@@ -132,7 +132,7 @@ int Test3_1()
 int Test3_2()
 {
     int arr[8] = {88,76,45,45,16,15,7,6};
-    ñountingSort(arr, 8);
+    countingSort(arr, 8);
     int arrSorted[8] = {6,7,15,16,45,45,76,88};
     for (size_t i = 0; i < 8; ++i)
     {
@@ -147,7 +147,7 @@ int Test3_2()
 int Test3_3()
 {
     int arr[8] = { 45,76,16,15,6,45,7,88};
-    ñountingSort(arr, 8);
+    countingSort(arr, 8);
     int arrSorted[8] = {6,7,15,16,45,45,76,88};
     for (size_t i = 0; i < 8; ++i)
     {
