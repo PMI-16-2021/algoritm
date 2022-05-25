@@ -1,0 +1,8 @@
+//
+// Created by bozen on 25.05.2022.
+//
+
+#ifndef HASHTABLE1_HASHTABLEH_H
+#define HASHTABLE1_HASHTABLEH_H
+
+#endif //HASHTABLE1_HASHTABLEH_H
