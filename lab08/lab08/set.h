@@ -3,9 +3,9 @@
 
 class Set{
 private:
-    char *arr{};
-    size_t count{};
-    size_t size{};
+    char *arr;
+    size_t count;
+    size_t size;
 public:
     Set(); //default constructor
     Set(size_t capacity); // constructor with parameters

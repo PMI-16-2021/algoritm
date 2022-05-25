@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab08/cmake-build-debug/CMakeFiles/lab08.dir/Test.cpp.o"
-  "/Users/sofiademchuk/Desktop/CLionProjects/lab08/main.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab08/cmake-build-debug/CMakeFiles/lab08.dir/main.cpp.o"
-  "/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.cpp" "/Users/sofiademchuk/Desktop/CLionProjects/lab08/cmake-build-debug/CMakeFiles/lab08.dir/set.cpp.o"
+  "/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/Test.cpp" "/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/cmake-build-debug/CMakeFiles/lab08.dir/Test.cpp.o"
+  "/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/main.cpp" "/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/cmake-build-debug/CMakeFiles/lab08.dir/main.cpp.o"
+  "/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/set.cpp" "/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/cmake-build-debug/CMakeFiles/lab08.dir/set.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -6,31 +6,31 @@
 
 #IncludeRegexTransform: 
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.cpp
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/Test.cpp
 Test.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/Test.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/Test.h
 iostream
 -
 set.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/set.h
 cassert
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/cassert
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/cassert
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/main.cpp
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/main.cpp
 iostream
 -
 set.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/set.h
 Test.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/Test.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/Test.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.cpp
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/set.cpp
 set.h
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/set.h
 
-/Users/sofiademchuk/Desktop/CLionProjects/lab08/set.h
+/Users/sofiademchuk/Documents/GitHub/algoritm/lab08/lab08/set.h
 iostream
 -
 
