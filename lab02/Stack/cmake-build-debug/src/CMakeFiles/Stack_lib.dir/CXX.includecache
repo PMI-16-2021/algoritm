@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/SetOfStacks.cpp
+SetOfStacks.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/SetOfStacks.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/SetOfStacks.h
+Stack.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/Stack.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/Stack.cpp
+Stack.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/Stack.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/src/Stack.h
+iostream
+-
+

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/CountingSorting.h
+string
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/src/CountingSorting.cpp
+iostream
+-
+CountingSorting.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/src/CountingSorting.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/src/CountingSorting.h
+string
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/test/CountingSortTest.cpp
+CountingSorting.h
+-
+gtest/gtest.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/test/gtest/gtest.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/test/main.cpp
+iostream
+-
+gtest/gtest.h
+-
+../src/CountingSorting.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/CountingSort/src/CountingSorting.h
+
