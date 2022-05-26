@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/MySet.cpp
+MySet.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/MySet.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/MySet.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/main.cpp
+iostream
+-
+MySet.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SetImplementation/MySet.h
+

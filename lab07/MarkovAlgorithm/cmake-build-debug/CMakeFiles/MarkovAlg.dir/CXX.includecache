@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/BadRuleException.h
+MyString.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/MyString.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/MyString.cpp
+MyString.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/MyString.h
+BadRuleException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/BadRuleException.h
+vector
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/MyString.h
+iostream
+-
+vector
+-
+

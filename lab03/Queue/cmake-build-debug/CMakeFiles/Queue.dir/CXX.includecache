@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Queue/Queue.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Queue/main.cpp
+iostream
+-
+Queue.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Queue/Queue.h
+

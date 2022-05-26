@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/src/QuickSorting.cpp
+QuickSorting.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/src/QuickSorting.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/QuickSort/src/QuickSorting.h
+string
+-
+

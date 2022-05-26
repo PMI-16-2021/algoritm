@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libSparseMatrix_lib.a CMakeFiles/SparseMatrix_lib.dir/InvalidCoordinatesException.cpp.o CMakeFiles/SparseMatrix_lib.dir/InvalidDimensionsException.cpp.o CMakeFiles/SparseMatrix_lib.dir/main.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libSparseMatrix_lib.a
