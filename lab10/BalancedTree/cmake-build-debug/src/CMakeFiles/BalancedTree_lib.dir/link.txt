@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libBalancedTree_lib.a CMakeFiles/BalancedTree_lib.dir/AVLTree.cpp.o CMakeFiles/BalancedTree_lib.dir/main.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libBalancedTree_lib.a
