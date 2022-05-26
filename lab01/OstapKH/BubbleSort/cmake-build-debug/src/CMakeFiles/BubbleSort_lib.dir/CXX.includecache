@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BubbleSort/src/BubbleSorting.cpp
+iostream
+-
+BubbleSorting.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BubbleSort/src/BubbleSorting.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BubbleSort/src/BubbleSorting.h
+string
+-
+
