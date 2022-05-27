@@ -10,27 +10,31 @@ namespace HashTableTest
 	{
 	public:
 		
-		TEST_METHOD(AddTest) {
+		TEST_METHOD(AddandIsFalseTest) {
 			HashTable<int> HT;
 			HT.add("Fr", 35);
-			Assert::IsFalse(HT.isEmpty());
+			Assert::IsFalse(HT.IsEmpty());
+			Assert::AreEqual(35, HT.get("Fr"));
 		}
 		TEST_METHOD(PopTest) {
 			HashTable<int> HT;
-			HT.add("Fr", 35);
-			HT.pop("Fr");
-			Assert::IsTrue(HT.isEmpty());
+			HT.add("Fr", 181);
+			HT.add("Rf", 120);
+			HT.add("Se", 56);
+			HT.pop("Rf");
+			Assert::IsFalse(HT.find("Rf"));
 		}
 		TEST_METHOD(GetTest) {
 			HashTable<int> HT;
 			HT.add("Fr", 35);
 			Assert::AreEqual(35, HT.get("Fr"));
 		}
-		TEST_METHOD(HashTest) {
+		TEST_METHOD(FindTest) {
 			HashTable<int> HT;
 			HT.add("Fr", 35);
 			HT.add("Se", 7);
-			Assert::AreEqual(0, HT._hash("Fr"));
+			Assert::IsTrue(HT.find("Fr"));
+			Assert::IsTrue(HT.find("Se"));
 		}
 	};
 }
