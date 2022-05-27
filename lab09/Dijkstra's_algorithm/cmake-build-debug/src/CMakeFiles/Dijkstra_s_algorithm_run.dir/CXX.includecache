@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Dijkstra's_algorithm/src/Graph.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Dijkstra's_algorithm/src/main.cpp
+Graph.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Dijkstra's_algorithm/src/Graph.h
+
