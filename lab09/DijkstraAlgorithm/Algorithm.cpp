@@ -59,7 +59,8 @@ bool graph::is_vertex_in_graph(const vertex& v) const
 	{
 		return true;
 	}
-	else {
+	else 
+	{
 		return false;
 	}
 }
@@ -147,7 +148,8 @@ void graph::add_vertices(const vertices& vs)
 		{
 			continue;
 		}
-		else {
+		else
+		{
 			m_vertices.push_back(*it);
 		}
 	}

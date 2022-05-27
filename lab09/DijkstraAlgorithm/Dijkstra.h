@@ -5,8 +5,6 @@
 #include <list>
 #include "Algorithm.h"
 
-
-
 namespace GraphAlgo
 {
 	const double infinity = std::numeric_limits< double >::infinity();
@@ -50,6 +48,4 @@ namespace GraphAlgo
 		dijkstra(const graph&);
 		~dijkstra();
 	};
-
-
 }; 
