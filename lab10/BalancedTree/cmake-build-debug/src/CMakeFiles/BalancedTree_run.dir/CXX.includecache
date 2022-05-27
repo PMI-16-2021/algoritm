@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BalancedTree/src/AVLTree.cpp
+AVLTree.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BalancedTree/src/AVLTree.h
+iostream
+-
+algorithm
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BalancedTree/src/AVLTree.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BalancedTree/src/main.cpp
+iostream
+-
+AVLTree.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/BalancedTree/src/AVLTree.h
+

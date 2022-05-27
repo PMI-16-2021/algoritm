@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/Stack.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/functions.cpp
+functions.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/functions.h
+Stack.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/Stack.h
+string
+-
+cmath
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/functions.h
+string
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/main.cpp
+iostream
+-
+functions.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/PolishNotation/functions.h
+

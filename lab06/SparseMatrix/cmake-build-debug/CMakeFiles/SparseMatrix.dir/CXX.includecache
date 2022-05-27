@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/Exceptions.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/SparseMatrix.h
+vector
+-
+iostream
+-
+Exceptions.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/Exceptions.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/main.cpp
+iostream
+-
+vector
+-
+SparseMatrix.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/SparseMatrix.h
+

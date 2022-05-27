@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/InvalidCoordinatesException.h
+string
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/InvalidDimensionsException.h
+string
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/SparseMatrix.h
+vector
+-
+iostream
+-
+InvalidDimensionsException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/InvalidDimensionsException.h
+InvalidCoordinatesException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/InvalidCoordinatesException.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/main.cpp
+iostream
+-
+vector
+-
+SparseMatrix.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/SparseMatrix/src/SparseMatrix.h
+

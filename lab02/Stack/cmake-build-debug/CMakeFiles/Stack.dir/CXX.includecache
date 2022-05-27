@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/SetOfStacks.cpp
+SetOfStacks.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/SetOfStacks.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/SetOfStacks.h
+Stack.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/Stack.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/Stack.cpp
+Stack.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/Stack.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/Stack.h
+iostream
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/main.cpp
+iostream
+-
+stack
+-
+Stack.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/Stack.h
+SetOfStacks.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/Stack/SetOfStacks.h
+

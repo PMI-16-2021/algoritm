@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/BadRuleException.cpp
+BadRuleException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/BadRuleException.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/BadRuleException.h
+MyString.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/MyString.h
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/MyString.cpp
+MyString.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/MyString.h
+BadRuleException.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/BadRuleException.h
+vector
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/MyString.h
+iostream
+-
+vector
+-
+
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/main.cpp
+iostream
+-
+vector
+-
+MyString.h
+/Users/ostapkilbasovych/Desktop/Університет навчальні матеріали/Програмування/MarkovAlg/src/MyString.h
+
