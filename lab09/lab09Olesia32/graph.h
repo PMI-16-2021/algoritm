@@ -18,7 +18,6 @@ private:
     int* prev;
     void ShowList(int src, List<NodeGraph> lt) const;
 public:
-    Graph();
     Graph(int _count);
     ~Graph();
     void AddEdge(int _source, int _dest, int _cost);
@@ -28,7 +27,6 @@ public:
     void RemoveEdge(int from, int to);
     bool FindEdge(int from, int to) const;
     int GetCost(int from, int to) const;
-    bool IsEmpty() const;
     void DisplayEdges() const;
     void Dijkstra(int _start);
     int* GetPrev();

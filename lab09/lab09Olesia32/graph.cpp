@@ -1,7 +1,5 @@
 #include "graph.h"
 
-Graph::Graph() : count(0) {}
-
 Graph::Graph(int _count) : count(_count) {
     adj_list = new List<NodeGraph>[count];
     dist = new int[count];
@@ -99,9 +97,6 @@ int Graph::GetCost(int from, int to) const {
     return cost;
 }
 
-bool Graph::IsEmpty() const {
-    return count == 0;
-}
 
 void Graph::DisplayEdges() const {
     for (int i = 0; i < count; i++) {

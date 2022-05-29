@@ -10,16 +10,10 @@ namespace DijkstraAlgorithmTest {
 
 	public:
 		TEST_METHOD(GetCountVertexTest) {
-			Graph G;
+			Graph G(0);
 			Assert::AreEqual(G.GetCountVertex(), 0);
 			Graph G1(3);
 			Assert::AreEqual(G1.GetCountVertex(), 3);
-		}
-		TEST_METHOD(IsEmptyTest) {
-			Graph G;
-			Assert::IsTrue(G.IsEmpty());
-			Graph G1(9);
-			Assert::AreEqual(G1.GetCountVertex(), 9);
 		}
 		TEST_METHOD(GetCostTest) {
 			Graph G(6);
