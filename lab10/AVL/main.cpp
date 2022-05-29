@@ -11,7 +11,9 @@ int main()
 	cout << "\nheight: " << A.height() << '\n';
 	A.print(); 
 	A.insert(3);
-	A.insert(4);
+
+	cout << '\n';
+	A.print();
 	A.insert(6);
 	A.insert(2);
 	A.insert(8);

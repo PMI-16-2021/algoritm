@@ -32,7 +32,7 @@ private:
 	void print(Node<T>* node, short shift) const;	//prints with a tree-like structure
 	void inorder(Node<T>* node) const;              //left-root-right print
 	void postorder(Node<T>* node) const;			//left-right-root print
-	void preorder(Node<T>* node) const;					//root-left-right print
+	void preorder(Node<T>* node) const;				//root-left-right print
 	
 public:
 	Tree();                  //default
@@ -306,10 +306,10 @@ void Tree<T>::print(Node<T>* n, short shift) const
 {
 	if (n)
 	{
-		print(n->left, shift + 1);
+		print(n->right, shift + 1);
 		for (short i = 0; i < shift; ++i) std::cout << '\t';
 		std::cout << n->key << '\n';
-		print(n->right, shift + 1);
+		print(n->left, shift + 1);
 	}
 }
 
