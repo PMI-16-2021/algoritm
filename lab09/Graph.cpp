@@ -3,7 +3,7 @@
 Graph::Graph(vector<int> vertex, vector<vector<int>> edges) {
     this->vertex = vertex;
     size = vertex.size();
-    matrix_adjacent = new int* [size];
+    matrix_adjacent = new int* [size];// we create 2 dimension-matrix
     for (int i = 0; i < size; ++i)
     {
         matrix_adjacent[i] = new int[size];
@@ -29,7 +29,7 @@ int Graph::Deykstri(int start, int end)
     {
         --start; --end;
         vector<int> distance(size, infinity);
-        distance[start] = 0;
+        distance[start] = 0; //null the start
         priority_queue<pair<int, int>> q;
         q.push(make_pair(0, start));
         while (!q.empty())
@@ -49,7 +49,7 @@ int Graph::Deykstri(int start, int end)
                 }
             }
         }
-        if (distance[end] == infinity)
+        if (distance[end] == infinity)//there is no path
         {
             cout << "The path from " << start + 1 << " to " << end + 1 << " does not exist!" << endl;
             return infinity;
@@ -63,7 +63,7 @@ int Graph::Deykstri(int start, int end)
 
 int Graph::operator()(int row, int col) const
 {
-        return matrix_adjacent[row][col];
+        return matrix_adjacent[row][col];// kile getter
 }
 
 void Graph::print()
@@ -78,7 +78,8 @@ void Graph::print()
     }
 }
 
-bool Graph::isEdge(int i ,int j) {
+bool Graph::isEdge(int i ,int j) // method check if there is a path between two edges
+{
     if (i >= 0 && i < vertex.size() && j >= 0 && j < vertex.size())
     {
         return true;
