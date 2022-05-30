@@ -1,10 +1,10 @@
 #include <iostream>
-#include "hashtable.h"
+#include "hashTable.h"
 using namespace std;
 
 int main()
 {
-	HashTable Table;
+	HashTable<double> Table;
 	cout << "HashTable is empty(1), if not(0): " << Table.isEmpty() << "\n\n";
 	Table.add(0.0, "leon");
 	Table.add(1.6, "squeak");
@@ -18,6 +18,6 @@ int main()
 	Table.values();
 	cout << "Get by key (elprimo) a value: " << Table.get("elprimo") << "\n\n";
 	cout << "Elements in HashTable: " << Table.elemCount() << "\n\n";
-	system("pause");
+	
 	return 0;
 }
