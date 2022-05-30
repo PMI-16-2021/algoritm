@@ -48,7 +48,6 @@ size_t Set::len() const
     return count;
 }
 
-
 bool Set::inSet(char item) const
 {
     for (int i = 0; i < count; ++i)
@@ -60,7 +59,6 @@ bool Set::inSet(char item) const
     }
     return false;
 }
-
 
 void Set::del(char item)
 {
@@ -97,7 +95,6 @@ void Set::del(char item)
     --count;
 }
 
-
 Set Set::unionSet(Set &S) const
 {
     Set newSet;
@@ -112,8 +109,6 @@ Set Set::unionSet(Set &S) const
     return newSet;
 }
 
-
-
 Set Set::intersection(Set &S)
 {
     Set newSet;
@@ -127,7 +122,6 @@ Set Set::intersection(Set &S)
     return newSet;
 }
 
-
 Set Set::difference(Set &S)
 {
     Set newSet;
@@ -140,7 +134,6 @@ Set Set::difference(Set &S)
     }
     return newSet;
 }
-
 
 Set Set::symmetricDifference(Set &S)
 {
