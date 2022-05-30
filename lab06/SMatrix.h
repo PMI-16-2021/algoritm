@@ -87,8 +87,6 @@ void SparseMatrix<T>::setM(T row, T col, T value)
     items.push_back(value);
     rows.push_back(row);
     columns.push_back(col);
-
-
 }
 template<typename T>
 bool SparseMatrix<T>::position(T row, T col) const
@@ -185,7 +183,6 @@ SparseMatrix<T> SparseMatrix<T>:: multiplication(const SparseMatrix& other)
                 tempM.setM(i,j, mult);
             }
         }
-
     }
     return tempM;
 }
