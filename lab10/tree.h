@@ -68,8 +68,7 @@ public:
         }
         return true;
     }
-    void Destroy(AVLNode* root)
-    {
+    void Destroy(AVLNode* root) {
         if (root == nullptr) {
             return;
         }
