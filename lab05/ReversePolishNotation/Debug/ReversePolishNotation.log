@@ -1,0 +1,7 @@
+﻿  main.cpp
+  stack.cpp
+C:\Users\USER\Desktop\ReversePolishNotation\stack.cpp(96,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\USER\Desktop\ReversePolishNotation\stack.cpp(165,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\USER\Desktop\ReversePolishNotation\stack.cpp(194,34): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  ReversePolishNotation.vcxproj -> C:\Users\USER\Desktop\ReversePolishNotation\Debug\ReversePolishNotation.exe
