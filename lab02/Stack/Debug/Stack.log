@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\USER\Desktop\Stack\Stack.h(24,20): warning C4553: '==': result of expression not used; did you intend '='?
+C:\Users\USER\Desktop\Stack\Stack.h(28,20): warning C4553: '==': result of expression not used; did you intend '='?
+  Stack.vcxproj -> C:\Users\USER\Desktop\Stack\Debug\Stack.exe

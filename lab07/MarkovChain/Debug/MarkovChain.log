@@ -1,0 +1,5 @@
+﻿  Markov.cpp
+C:\Users\USER\Desktop\MarkovChain\Markov.cpp(164,23): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  Generating Code...
+  MarkovChain.vcxproj -> C:\Users\USER\Desktop\MarkovChain\Debug\MarkovChain.exe
