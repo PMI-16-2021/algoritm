@@ -1,0 +1,11 @@
+﻿  main.cpp
+C:\Users\USER\Desktop\SetSTL\Set.h(143,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\USER\Desktop\SetSTL\Set.h(141): message : while compiling class template member function 'MySet<int> MySet<int>::unionSet(MySet<int> &)'
+C:\Users\USER\Desktop\SetSTL\main.cpp(17): message : see reference to function template instantiation 'MySet<int> MySet<int>::unionSet(MySet<int> &)' being compiled
+C:\Users\USER\Desktop\SetSTL\main.cpp(5): message : see reference to class template instantiation 'MySet<int>' being compiled
+C:\Users\USER\Desktop\SetSTL\Set.h(147,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\USER\Desktop\SetSTL\Set.h(153,35): warning C4101: 'exception': unreferenced local variable
+C:\Users\USER\Desktop\SetSTL\Set.h(185,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\USER\Desktop\SetSTL\Set.h(183): message : while compiling class template member function 'MySet<int> MySet<int>::intersection(MySet<int> &)'
+C:\Users\USER\Desktop\SetSTL\main.cpp(19): message : see reference to function template instantiation 'MySet<int> MySet<int>::intersection(MySet<int> &)' being compiled
+  SetSTL.vcxproj -> C:\Users\USER\Desktop\SetSTL\Debug\SetSTL.exe
