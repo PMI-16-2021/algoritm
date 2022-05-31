@@ -45,9 +45,11 @@ private:
     int FindVertex(int f_id) const;                  // returns position of vertex in vector
     bool HaveEdge(int id_x, int id_y);         // checks if there is such edge
     bool HaveVertex(int id);
+    int MinDistance(const vector<Vertex>& vec, int from_id);
+    int NearestVertex(const vector<Vertex>& vec, int to_id);
 public:
     void AddVertex(const Vertex& vertex);       // adds vertex if it is not here
-    void AddVertex(int id, string city);
+    void AddVertex(int id, string city="");
     bool IsAdjacent(int id_x, int id_y);        // tests whether there is an edge from the vertex x to the vertex y
     vector<Vertex> Neighbors(int id);     // returns all vertices y such that there is an edge from the vertex x to the vertex y
     void RemoveVertex(int remove_id);           // removes the vertex x, if it is there
@@ -56,4 +58,5 @@ public:
     void Print();
     size_t GraphSize() const;
     int Distance(int from, int to);
+    int DijkstraAlg(int start, int end);    // returns the shortest path
 };

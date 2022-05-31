@@ -1,4 +1,5 @@
 #include "graph.h"
+#include <queue>
 
 Edge::Edge() : weight_(0), dest_id_(-1) {}
 
@@ -136,12 +137,14 @@ void Graph::RemoveEdge(int id_x, int id_y) {
     }
 }
 
-int Graph::FindVertex(int f_id) const{
+int Graph::FindVertex(int f_id) const {
+    int ret_ind = -1;
     for(int i = 0; i < vertices_.size(); i++) {
         if(vertices_.at(i).GetId() == f_id) {
-           return i;
+           ret_ind = i;
         }
     }
+    return ret_ind;
 }
 
 void Graph::Print() {
@@ -168,6 +171,40 @@ size_t Graph::GraphSize() const {
     return vertices_.size();
 }
 
+int Graph::DijkstraAlg(int start, int end) {
+    int size = GraphSize();
+    vector<int> result_path;
+    vector<int> path_vals(size, INT_MAX);
+    path_vals[start] = 0;
+    std::priority_queue<std::pair<int, int>> q;
+    q.push(std::make_pair(0, start));
+    while (!q.empty()) {
+        int len = q.top().first;
+        int vertex = q.top().second;
+        q.pop();
+        if (len > path_vals[vertex]) {
+            continue;
+        }
+        for (int i = 0; i < size; ++i) {
+            int to = i;
+            int lenght = Distance(vertex, to);
+            if (IsAdjacent(vertex,to) && path_vals[to] > path_vals[vertex] + lenght && lenght >= 0)
+            {
+                path_vals[to] = path_vals[vertex] + lenght;
+                q.push(std::make_pair(path_vals[to], to));
+            }
+        }
+    }
+    if (path_vals[end] == INT_MAX) {
+        std::cout << "From " << start + 1 << " to " << end + 1 << " does not exist!" << std::endl;
+        return INT_MAX;
+    }
+    else {
+        std::cout << "From " << start + 1 << " to " << end + 1 << ": " << path_vals[end] << std::endl;
+        return path_vals[end];
+    }
+}
+
 int Graph::Distance(int from_id, int to_id) {
     if(!HaveEdge(from_id,to_id)) {
         return -1;
@@ -180,6 +217,22 @@ int Graph::Distance(int from_id, int to_id) {
         }
     }
     return dist;
+}
+
+int Graph::MinDistance(const vector<Vertex>& vec, int from_id) {
+    int min_dist = INT_MAX;
+    int comp;
+    for(int i = 0; i < vec.size(); i++) {
+        comp = Distance(from_id, vec[i].GetId());
+        if(comp < min_dist) {
+            min_dist = comp;
+        }
+    }
+    return min_dist;
+}
+
+int Graph::NearestVertex(const vector<Vertex> &vec, int to_id) {
+    return 0;
 }
 
 
